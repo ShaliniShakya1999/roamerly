@@ -36,7 +36,7 @@ body {
     position: relative;
 }
 
-/* Mesh Gradient Background (Blurred Blobs) */
+/* Mesh Gradient Background (Blurred Blobs & Airplane Path) */
 .mesh-bg {
     position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; z-index: -1; overflow: hidden; pointer-events: none;
 }
@@ -44,6 +44,15 @@ body {
 .mesh-blob.blue { width: 600px; height: 600px; background: rgba(91, 127, 255, 0.3); top: -200px; left: -100px; }
 .mesh-blob.purple { width: 500px; height: 500px; background: rgba(168, 85, 247, 0.2); bottom: -100px; right: -50px; animation-delay: -5s; }
 .mesh-blob.cyan { width: 400px; height: 400px; background: rgba(14, 165, 233, 0.2); top: 40%; left: 50%; transform: translateX(-50%); animation-delay: -10s; }
+
+/* Floating Airplane Path */
+.bg-airplane { position: absolute; font-size: 24px; color: rgba(91, 127, 255, 0.2); opacity: 0; animation: flyAcross 25s infinite linear; filter: drop-shadow(0 10px 10px rgba(91, 127, 255, 0.1)); }
+@keyframes flyAcross {
+    0% { transform: translate(-10vw, 80vh) rotate(20deg) scale(1); opacity: 0; }
+    10% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { transform: translate(110vw, -10vh) rotate(20deg) scale(0.5); opacity: 0; }
+}
 
 @keyframes floatBlob {
     0% { transform: translate(0, 0) scale(1); }
@@ -61,16 +70,17 @@ img { max-width: 100%; height: auto; }
     -webkit-background-clip: text; -webkit-text-fill-color: transparent;
 }
 .glass-panel {
-    background: var(--glass-bg);
-    backdrop-filter: blur(24px); -webkit-backdrop-filter: blur(24px);
-    border: 1px solid var(--glass-border);
+    background: rgba(255, 255, 255, 0.35);
+    backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
     border-radius: 24px;
     box-shadow: var(--glass-shadow);
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s;
 }
 .glass-panel-hover:hover {
-    transform: translateY(-8px);
+    transform: translateY(-8px) scale(1.02);
     box-shadow: var(--float-shadow);
-    border-color: rgba(255,255,255,0.8);
+    border-color: rgba(255,255,255,0.6);
 }
 
 /* Buttons */
@@ -160,11 +170,14 @@ img { max-width: 100%; height: auto; }
 .section-title { font-size: 48px; margin-bottom: 15px; letter-spacing: -0.02em; }
 .section-desc { font-size: 18px; color: var(--text-muted); max-width: 600px; margin: 0 auto; }
 
-/* How AI Works */
-.step-card { padding: 40px 30px; text-align: center; height: 100%; display: flex; flex-direction: column; align-items: center; }
+/* How AI Works - Animated Connector */
+.step-card { padding: 40px 30px; text-align: center; height: 100%; display: flex; flex-direction: column; align-items: center; position: relative; z-index: 2; }
 .step-icon-wrapper { width: 80px; height: 80px; background: linear-gradient(135deg, #fff, #F5F9FF); border-radius: 24px; display: flex; justify-content: center; align-items: center; font-size: 32px; color: var(--primary-blue); margin-bottom: 25px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); border: 1px solid rgba(255,255,255,0.8); transition: var(--transition); }
 .step-card:hover .step-icon-wrapper { transform: scale(1.1) rotate(5deg); box-shadow: 0 15px 35px rgba(91,127,255,0.2); }
 .step-card h4 { font-size: 22px; margin-bottom: 15px; }
+.step-connector-line { position: absolute; top: 120px; left: 50%; width: 100%; height: 2px; background: linear-gradient(90deg, transparent, var(--primary-blue), transparent); background-size: 200% 100%; animation: lineFlow 3s infinite linear; z-index: 1; opacity: 0.3; }
+@keyframes lineFlow { 0% { background-position: 100% 0; } 100% { background-position: -100% 0; } }
+@media (max-width: 992px) { .step-connector-line { display: none; } }
 
 /* Destinations Hover Zoom */
 .dest-card { border-radius: 30px; overflow: hidden; position: relative; height: 420px; }
