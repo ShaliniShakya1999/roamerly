@@ -1,31 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Roamerly - Luxury Travel & Adventures</title>
-
+    <title>Roamerly - AI Powered Travel & Internships</title>
+    
     <!-- SEO Meta Tags -->
-    <meta name="description"
-        content="Explore the world with Roamerly. Luxury flights, hotels, holiday packages and adventures tailored for you. Find the cheapest flights to any airport globally.">
-    <meta name="keywords"
-        content="luxury travel, holiday packages, flight booking, hotel booking, Roamerly, ATOL protected, business class, group travel">
-
-    <!-- Fonts -->
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Poppins:wght@300;400;500;600&display=swap"
-        rel="stylesheet">
-
+    <meta name="description" content="Explore India smarter with AI travel planning. Personalized itineraries, hidden gems, budget planning, and exclusive travel-tech internships.">
+    
+    <!-- Fonts: Poppins (Headings) & Inter (Body) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
     <!-- CSS Libraries -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-
+    
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
-
 <body>
 
     <!-- Preloader -->
@@ -33,673 +25,677 @@
         <i class="fas fa-plane loader-plane"></i>
     </div>
 
-    <!-- Top Bar -->
-    <div class="top-bar d-none d-lg-block">
-        <div class="container d-flex justify-content-between align-items-center">
-            <div class="d-flex align-items-center">
-                <span class="me-4"><i class="fas fa-phone-alt me-2"></i> 0204 553 5491</span>
-                <span>We are open 24 hours a day / 7 days a week</span>
-            </div>
-            <div class="top-bar-logos">
-                <span>Protected by:</span>
-                <i class="fas fa-shield-alt ms-2 text-primary"></i> <span class="ms-1 fw-bold">ATOL</span>
-                <i class="fas fa-plane-departure ms-3 text-info"></i> <span class="ms-1 fw-bold">IATA</span>
-            </div>
-        </div>
-    </div>
-
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg sticky-top">
+    <!-- Sticky Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top" style="background: rgba(15, 23, 42, 0.95); backdrop-filter: blur(10px);">
         <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="assets/images/logo.png" alt="Roamerly Logo"
-                    style="height: 100px; margin-top: -15px; margin-bottom: -15px;">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/images/logo.png" alt="Roamerly Logo" style="filter: brightness(0) invert(1);" id="nav-logo">
             </a>
-
+            
             <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <i class="fas fa-bars fs-3"></i>
+                <i class="fas fa-bars fs-3 text-white"></i>
             </button>
-
+            
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mx-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Global
-                            Flights</a>
-                        <ul class="dropdown-menu glass-card">
-                            <li><a class="dropdown-item" href="usa.html">USA</a></li>
-                            <li><a class="dropdown-item" href="canada.html">Canada</a></li>
-                            <li><a class="dropdown-item" href="australia.html">Australia</a></li>
-                            <li><a class="dropdown-item" href="new-zealand.html">New Zealand</a></li>
-                            <li><a class="dropdown-item" href="middle-east.html">Middle East</a></li>
-                            <li><a class="dropdown-item" href="africa.html">Africa</a></li>
-                            <li><a class="dropdown-item" href="far-east.html">Far East</a></li>
-                            <li><a class="dropdown-item" href="latin-america.html">Latin America</a></li>
-                            <li><a class="dropdown-item" href="caribbean.html">Caribbean</a></li>
-                            <li><a class="dropdown-item" href="asia.html">Asia</a></li>
-                            <li><a class="dropdown-item" href="mexico.html">Mexico</a></li>
-                            <li><a class="dropdown-item" href="europe.html">Europe</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item"><a class="nav-link" href="#holidays">Holidays</a></li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Premium
-                            Travel</a>
-                        <ul class="dropdown-menu glass-card">
-                            <li><a class="dropdown-item" href="#">Business & First Class</a></li>
-                            <li><a class="dropdown-item" href="#">Group Travel Booking</a></li>
-                            <li><a class="dropdown-item" href="#">Red Eye Flights</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#destinations">Destinations</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#ai-planner">AI Planner</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#packages">Packages</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#internship">Internship</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="contact.html">Contact</a></li>
                 </ul>
-                <div class="d-flex align-items-center mt-3 mt-lg-0">
-                    <button id="theme-toggle" class="theme-toggle"><i class="fas fa-sun"></i></button>
-                    <a href="#" class="btn-luxury">Book Now</a>
+                <div class="d-flex align-items-center mt-3 mt-lg-0 gap-3">
+                    <a href="#" class="text-white fw-semibold text-decoration-none">Login</a>
+                    <a href="#search" class="btn-primary-theme">Start Planning</a>
                 </div>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Slider & Advanced Search -->
-    <section id="home" class="hero-slider">
-        <div class="swiper hero-swiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1920&q=80"
-                        class="hero-img" alt="Luxury Flight">
-                    <div class="hero-overlay"></div>
-                </div>
-                <div class="swiper-slide">
-                    <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1920&q=80"
-                        class="hero-img" alt="Dubai">
-                    <div class="hero-overlay"></div>
-                </div>
-            </div>
-        </div>
+    <!-- 1. Hero Section -->
+    <section id="home" class="hero-wrapper">
+        <video autoplay loop muted playsinline class="hero-video">
+            <source src="https://cdn.coverr.co/videos/coverr-flying-over-the-ocean-and-clouds-1563/1080p.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay"></div>
 
-        <div class="hero-content text-center">
-            <h1 class="gsap-zoom-in">Explore The World With <span class="text-gradient">Roamerly</span></h1>
-            <p class="gsap-fade-up">Find Flights, Hotels, Holidays & Adventures At The Best Prices</p>
-        </div>
-
-        <!-- Advanced Flight Search Form -->
-        <div class="search-box-container gsap-fade-up">
-            <div class="search-form-wrapper">
-                <div class="d-flex justify-content-between flex-wrap mb-3">
-                    <div class="radio-group d-flex">
-                        <label><input type="radio" name="trip" checked> Round Trip</label>
-                        <label><input type="radio" name="trip"> One Way</label>
-                    </div>
-                    <div class="text-end text-md-start mt-2 mt-md-0">
-                        <a href="#" class="text-info text-decoration-none small"><i class="fas fa-sliders-h me-1"></i>
-                            Advance Options</a>
+        <div class="container hero-content">
+            <div class="row align-items-center">
+                <div class="col-lg-8 gsap-fade-up">
+                    <h1 class="hero-title">Explore India Smarter With <span class="text-accent">AI Travel Planning</span></h1>
+                    <p class="hero-subtitle mb-5">Personalized itineraries, hidden gems, budget planning & real-time travel guidance — all in one place.</p>
+                    <div class="d-flex gap-3 flex-wrap">
+                        <a href="#search" class="btn-primary-theme"><i class="fas fa-magic"></i> Start Planning</a>
+                        <a href="#destinations" class="btn-outline-theme text-white border-white">Explore Destinations</a>
                     </div>
                 </div>
-
-                <form class="row g-3 align-items-end">
-                    <div class="col-lg-3 col-md-6">
-                        <label class="form-label">From</label>
-                        <div class="input-group">
-                            <span class="input-group-text bg-transparent border-end-0 border-secondary text-muted"><i
-                                    class="fas fa-map-marker-alt"></i></span>
-                            <input type="text" class="form-control border-start-0 ps-0" placeholder="Leaving From">
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <label class="form-label">To</label>
-                        <div class="input-group">
-                            <span class="input-group-text bg-transparent border-end-0 border-secondary text-muted"><i
-                                    class="fas fa-location-arrow"></i></span>
-                            <input type="text" class="form-control border-start-0 ps-0" placeholder="Going To">
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-4 col-6">
-                        <label class="form-label">Departing</label>
-                        <input type="date" class="form-control">
-                    </div>
-                    <div class="col-lg-2 col-md-4 col-6">
-                        <label class="form-label">Returning</label>
-                        <input type="date" class="form-control">
-                    </div>
-                    <div class="col-lg-2 col-md-4">
-                        <label class="form-label">Passenger(s)</label>
-                        <select class="form-select">
-                            <option>1 Traveller</option>
-                            <option>2 Travellers</option>
-                            <option>3 Travellers</option>
-                            <option>Group (4+)</option>
-                        </select>
-                    </div>
-                    <div class="col-12 mt-4 text-center">
-                        <button type="button" class="btn-luxury w-100 py-3" style="max-width: 300px;"><i
-                                class="fas fa-search me-2"></i> Search Flights</button>
-                        <span class="last-updated-text">Displayed prices are subject to availability. The prices were
-                            last updated 5 hours ago and are subject to change. Limited availability.</span>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <!-- Global Flights Section -->
-    <section class="py-5" style="margin-top: 100px;">
-        <div class="container py-5">
-            <div class="section-title gsap-fade-up">
-                <h6>Global Destinations</h6>
-                <h2>Flights Around the World</h2>
-                <p class="text-muted">Search for the cheapest flights to any airport anywhere in the world and we'll
-                    help you find the best deals available.</p>
-            </div>
-
-            <div class="row g-4 gsap-stagger-container">
-                <div class="col-lg-4 col-md-6 gsap-stagger-item">
-                    <div class="flight-card">
-                        <div class="flight-img-wrapper">
-                            <img src="https://images.unsplash.com/photo-1523482580672-f109ba8cb9be?auto=format&fit=crop&w=600&q=80"
-                                alt="Australia">
-                        </div>
-                        <div class="flight-card-body d-flex justify-content-between align-items-center">
-                            <h5 class="mb-0">Australia Flights</h5>
-                            <span class="flight-price">from £417pp</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 gsap-stagger-item">
-                    <div class="flight-card">
-                        <div class="flight-img-wrapper">
-                            <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=600&q=80"
-                                alt="Middle East">
-                        </div>
-                        <div class="flight-card-body d-flex justify-content-between align-items-center">
-                            <h5 class="mb-0">Middle East Flights</h5>
-                            <span class="flight-price">from £264pp</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 gsap-stagger-item">
-                    <div class="flight-card">
-                        <div class="flight-img-wrapper">
-                            <img src="https://images.unsplash.com/photo-1528181304800-259b08848526?auto=format&fit=crop&w=600&q=80"
-                                alt="Far East">
-                        </div>
-                        <div class="flight-card-body d-flex justify-content-between align-items-center">
-                            <h5 class="mb-0">Far East Flights</h5>
-                            <span class="flight-price">from £290pp</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 gsap-stagger-item">
-                    <div class="flight-card">
-                        <div class="flight-img-wrapper">
-                            <img src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=600&q=80"
-                                alt="Africa">
-                        </div>
-                        <div class="flight-card-body d-flex justify-content-between align-items-center">
-                            <h5 class="mb-0">Africa Flights</h5>
-                            <span class="flight-price">from £375pp</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 gsap-stagger-item">
-                    <div class="flight-card">
-                        <div class="flight-img-wrapper">
-                            <img src="https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?auto=format&fit=crop&w=600&q=80"
-                                alt="N. America">
-                        </div>
-                        <div class="flight-card-body d-flex justify-content-between align-items-center">
-                            <h5 class="mb-0">N. America Flights</h5>
-                            <span class="flight-price">from £233pp</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 gsap-stagger-item">
-                    <div class="flight-card">
-                        <div class="flight-img-wrapper">
-                            <img src="https://images.unsplash.com/photo-1483729558449-99ef09a8c325?auto=format&fit=crop&w=600&q=80"
-                                alt="S. America">
-                        </div>
-                        <div class="flight-card-body d-flex justify-content-between align-items-center">
-                            <h5 class="mb-0">S. America Flights</h5>
-                            <span class="flight-price">from £315pp</span>
-                        </div>
+                <div class="col-lg-4 d-none d-lg-block gsap-fade-up">
+                    <div class="hero-floating-card ms-auto" style="max-width: 250px;">
+                        <ul class="list-unstyled mb-0 fs-5 fw-semibold d-flex flex-column gap-4">
+                            <li><i class="fas fa-map-marked-alt text-accent fs-3 mb-2 d-block"></i> 50+ Destinations</li>
+                            <li><i class="fas fa-robot text-accent fs-3 mb-2 d-block"></i> AI Powered</li>
+                            <li><i class="fas fa-wallet text-accent fs-3 mb-2 d-block"></i> Budget Friendly</li>
+                            <li><i class="fas fa-headset text-accent fs-3 mb-2 d-block"></i> 24/7 Support</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Airline Deals Section -->
-    <section class="py-5 bg-darker">
+    <!-- Floating Search Bar -->
+    <div class="container search-wrapper gsap-fade-up" id="search">
+        <form class="search-box">
+            <div class="search-field">
+                <label>Where do you want to go?</label>
+                <input type="text" placeholder="e.g. Goa, Manali, Kashmir...">
+            </div>
+            <div class="search-field">
+                <label>Budget</label>
+                <select>
+                    <option>Standard (₹10k - ₹25k)</option>
+                    <option>Premium (₹25k - ₹50k)</option>
+                    <option>Luxury (₹50k+)</option>
+                </select>
+            </div>
+            <div class="search-field">
+                <label>Days</label>
+                <select>
+                    <option>3 - 5 Days</option>
+                    <option>1 Week</option>
+                    <option>10+ Days</option>
+                </select>
+            </div>
+            <button type="button" class="search-btn"><i class="fas fa-search"></i></button>
+        </form>
+    </div>
+
+    <!-- 2. Trust Badges -->
+    <section class="trust-section">
         <div class="container">
-            <div class="section-title gsap-fade-up">
-                <h6>Flash Sales</h6>
-                <h2>Exclusive Airline Deals</h2>
+            <div class="d-flex flex-wrap justify-content-between align-items-center gap-4 text-center">
+                <div class="d-flex align-items-center gap-2 mx-auto mx-md-0">
+                    <h3 class="fw-bold mb-0">10K+</h3><span class="text-muted fw-semibold">Travelers</span>
+                </div>
+                <div class="d-flex align-items-center gap-2 mx-auto mx-md-0">
+                    <h3 class="fw-bold mb-0">50+</h3><span class="text-muted fw-semibold">Cities</span>
+                </div>
+                <div class="d-flex align-items-center gap-2 mx-auto mx-md-0">
+                    <h3 class="fw-bold mb-0">4.9/5</h3><i class="fas fa-star text-warning"></i><span class="text-muted fw-semibold">Rating</span>
+                </div>
+                <div class="trust-logos d-none d-lg-flex gap-4 ms-auto">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Airbnb_Logo_B%C3%A9lo.svg/512px-Airbnb_Logo_B%C3%A9lo.svg.png" alt="Airbnb">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/British_Airways_Logo.svg/512px-British_Airways_Logo.svg.png" alt="British Airways">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/PayPal.svg/512px-PayPal.svg.png" alt="PayPal">
+                </div>
             </div>
-            <div class="row g-4 justify-content-center gsap-stagger-container">
-                <div class="col-md-3 col-sm-6 text-center gsap-stagger-item">
-                    <div class="glass-card p-4">
-                        <h4 class="text-gradient mb-3">British Airways</h4>
-                        <p class="small text-muted">Global Flight Sale</p>
-                        <a href="#" class="btn-outline btn-sm mt-2">View Deals</a>
+        </div>
+    </section>
+
+    <!-- 3. How It Works -->
+    <section class="py-24">
+        <div class="container">
+            <div class="section-header gsap-fade-up">
+                <h6>Simple Process</h6>
+                <h2>How Roamerly Works</h2>
+                <p>Plan your dream vacation in just 3 simple steps using our advanced AI technology.</p>
+            </div>
+            <div class="row g-4 position-relative gsap-stagger-container">
+                <div class="col-md-4 gsap-stagger-item">
+                    <div class="step-card">
+                        <div class="step-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div class="step-arrow"></div>
+                        <h4>Step 1: Choose Destination</h4>
+                        <p class="text-muted small">Tell us where you want to go and what your vibe is.</p>
                     </div>
                 </div>
-                <div class="col-md-3 col-sm-6 text-center gsap-stagger-item">
-                    <div class="glass-card p-4">
-                        <h4 class="text-gradient mb-3">Air Canada</h4>
-                        <p class="small text-muted">Massive Deals</p>
-                        <a href="#" class="btn-outline btn-sm mt-2">View Deals</a>
+                <div class="col-md-4 gsap-stagger-item">
+                    <div class="step-card">
+                        <div class="step-icon"><i class="fas fa-robot"></i></div>
+                        <div class="step-arrow"></div>
+                        <h4>Step 2: AI Creates Itinerary</h4>
+                        <p class="text-muted small">Our AI instantly generates a personalized, budget-friendly plan.</p>
                     </div>
                 </div>
-                <div class="col-md-3 col-sm-6 text-center gsap-stagger-item">
-                    <div class="glass-card p-4">
-                        <h4 class="text-gradient mb-3">American Airlines</h4>
-                        <p class="small text-muted">Global Deals</p>
-                        <a href="#" class="btn-outline btn-sm mt-2">View Deals</a>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 text-center gsap-stagger-item">
-                    <div class="glass-card p-4">
-                        <h4 class="text-gradient mb-3">Emirates</h4>
-                        <p class="small text-muted">Business Class Offer</p>
-                        <a href="#" class="btn-outline btn-sm mt-2">View Deals</a>
+                <div class="col-md-4 gsap-stagger-item">
+                    <div class="step-card">
+                        <div class="step-icon"><i class="fas fa-plane-departure"></i></div>
+                        <h4>Step 3: Travel Stress-Free</h4>
+                        <p class="text-muted small">Pack your bags and enjoy seamless bookings and 24/7 support.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Holiday Types Section -->
-    <section id="holidays" class="py-5">
-        <div class="container py-5">
-            <div class="section-title gsap-fade-up">
-                <h6>Portfolio</h6>
-                <h2>Book Your Holiday Types</h2>
-                <p class="text-muted">Explore our destination portfolio to find the holiday of your dreams.</p>
+    <!-- 4. Top Destinations -->
+    <section id="destinations" class="py-24 bg-light-blue">
+        <div class="container">
+            <div class="section-header gsap-fade-up">
+                <h6>Explore India</h6>
+                <h2>Top Destinations</h2>
+                <p>Discover the most sought-after Indian destinations curated for the perfect getaway.</p>
             </div>
             <div class="row g-4 gsap-stagger-container">
-                <div class="col-lg-2 col-md-4 col-sm-6 gsap-stagger-item">
-                    <div class="holiday-card">
-                        <i class="fas fa-glass-cheers"></i>
-                        <h5>All Inclusive</h5>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-4 col-sm-6 gsap-stagger-item">
-                    <div class="holiday-card">
-                        <i class="fas fa-users"></i>
-                        <h5>Family</h5>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-4 col-sm-6 gsap-stagger-item">
-                    <div class="holiday-card">
-                        <i class="fas fa-heart"></i>
-                        <h5>Honeymoon</h5>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-4 col-sm-6 gsap-stagger-item">
-                    <div class="holiday-card">
-                        <i class="fas fa-gem"></i>
-                        <h5>Luxury</h5>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-4 col-sm-6 gsap-stagger-item">
-                    <div class="holiday-card">
-                        <i class="fas fa-umbrella-beach"></i>
-                        <h5>Beach</h5>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-4 col-sm-6 gsap-stagger-item">
-                    <div class="holiday-card">
-                        <i class="fas fa-city"></i>
-                        <h5>City Breaks</h5>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Premium Services Section -->
-    <section id="services" class="py-5 glass-card mx-lg-4 my-5">
-        <div class="container py-5">
-            <div class="section-title gsap-fade-up">
-                <h6>Extras</h6>
-                <h2>Other premium services which make a trip extra special</h2>
-            </div>
-            <div class="row g-4 gsap-stagger-container">
-                <div class="col-md-6 gsap-stagger-item">
-                    <div class="service-box">
-                        <div class="service-icon"><i class="fas fa-couch"></i></div>
-                        <div class="service-content">
-                            <h4>Special Lounges</h4>
-                            <p>Airport Lounges: Supreme comfort before you fly.</p>
-                            <a href="#" class="text-info small mt-2 d-inline-block">Discover More &raquo;</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 gsap-stagger-item">
-                    <div class="service-box">
-                        <div class="service-icon"><i class="fas fa-car-side"></i></div>
-                        <div class="service-content">
-                            <h4>Meet and Greet</h4>
-                            <p>We'll arrange private transfer right to your destination.</p>
-                            <a href="#" class="text-info small mt-2 d-inline-block">Discover More &raquo;</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 gsap-stagger-item">
-                    <div class="service-box">
-                        <div class="service-icon"><i class="fas fa-plane"></i></div>
-                        <div class="service-content">
-                            <h4>First & Business Class</h4>
-                            <p>Save exclusively on First & Business Class with Roamerly.</p>
-                            <a href="#" class="text-info small mt-2 d-inline-block">Discover More &raquo;</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 gsap-stagger-item">
-                    <div class="service-box">
-                        <div class="service-icon"><i class="fas fa-briefcase"></i></div>
-                        <div class="service-content">
-                            <h4>Corporate Travel</h4>
-                            <p>Exclusive premium corporate rates tailored for businesses.</p>
-                            <a href="#" class="text-info small mt-2 d-inline-block">Discover More &raquo;</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact & Enquiry Section -->
-    <section class="py-5 text-center">
-        <div class="container py-5">
-            <h2 class="display-5 fw-bold mb-3 gsap-fade-up">Have an enquiry? Choose an option to start your travel</h2>
-            <p class="lead text-muted mb-5 gsap-fade-up">Roamerly is really expert when it comes to travel – Our Travel
-                Experts can get the best deals for you, that definitely will come under your budget and travel dates. So
-                what are you waiting for?</p>
-
-            <div class="row g-4 justify-content-center gsap-stagger-container">
+                <!-- Goa -->
                 <div class="col-lg-4 col-md-6 gsap-stagger-item">
-                    <div class="contact-method-card">
-                        <i class="fas fa-phone-volume"></i>
-                        <h3>0204 553 5491</h3>
-                        <p class="text-muted">Speak to our travel specialists directly for instant support.</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 gsap-stagger-item">
-                    <div class="contact-method-card">
-                        <i class="fas fa-envelope-open-text"></i>
-                        <h3>Send an email</h3>
-                        <p class="text-muted">Send an enquiry to our travel experts at info@roamerly.co.uk</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 gsap-stagger-item">
-                    <div class="contact-method-card">
-                        <i class="fas fa-headset"></i>
-                        <h3>Request a call back</h3>
-                        <p class="text-muted">We'd love to hear from you! Our Travel Experts will call you.</p>
-                        <button class="btn-luxury btn-sm mt-3"
-                            onclick="document.getElementById('callback-toggle-btn').click();">Schedule Callback</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials -->
-    <section class="py-5">
-        <div class="container py-5 text-center">
-            <div class="section-title gsap-fade-up">
-                <h6>Customer Support</h6>
-                <h2>What Our Travelers Say</h2>
-            </div>
-            <div class="swiper testimonial-swiper pb-5 gsap-fade-up">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="testimonial-card mx-auto" style="max-width: 800px;">
-                            <img src="https://randomuser.me/api/portraits/women/44.jpg" class="rounded-circle mb-4"
-                                width="80" alt="User">
-                            <div class="text-warning mb-3">
-                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                    class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <div class="dest-card">
+                        <img src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=600&q=80" alt="Goa">
+                        <div class="dest-rating"><i class="fas fa-star text-warning"></i> 4.8</div>
+                        <div class="dest-overlay">
+                            <h3 class="dest-title">Goa</h3>
+                            <div class="dest-meta">
+                                <span><i class="far fa-clock"></i> 4 Days</span>
+                                <span class="fw-bold">From ₹12,000</span>
                             </div>
-                            <p class="fst-italic lead mb-4">"Roamerly found us the best business class flights to Dubai.
-                                The private lounge access and meet-and-greet service were phenomenal."</p>
-                            <h5 class="text-gradient mb-0">Sarah Jenkins</h5>
-                            <span class="small text-muted">United Kingdom</span>
+                            <button class="btn btn-sm btn-outline-light mt-3 w-50">Explore</button>
                         </div>
                     </div>
-                    <div class="swiper-slide">
-                        <div class="testimonial-card mx-auto" style="max-width: 800px;">
-                            <img src="https://randomuser.me/api/portraits/men/32.jpg" class="rounded-circle mb-4"
-                                width="80" alt="User">
-                            <div class="text-warning mb-3">
-                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                    class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+                <!-- Kashmir -->
+                <div class="col-lg-4 col-md-6 gsap-stagger-item">
+                    <div class="dest-card">
+                        <img src="https://images.unsplash.com/photo-1629837943577-ed170c73362a?auto=format&fit=crop&w=600&q=80" alt="Kashmir">
+                        <div class="dest-rating"><i class="fas fa-star text-warning"></i> 4.9</div>
+                        <div class="dest-overlay">
+                            <h3 class="dest-title">Kashmir</h3>
+                            <div class="dest-meta">
+                                <span><i class="far fa-clock"></i> 6 Days</span>
+                                <span class="fw-bold">From ₹25,000</span>
                             </div>
-                            <p class="fst-italic lead mb-4">"The ATOL protection gave me peace of mind. Great family
-                                holiday package to Orlando with amazing discounts!"</p>
-                            <h5 class="text-gradient mb-0">Rahul Sharma</h5>
-                            <span class="small text-muted">United Kingdom</span>
+                            <button class="btn btn-sm btn-outline-light mt-3 w-50">Explore</button>
                         </div>
                     </div>
                 </div>
-                <div class="swiper-pagination"></div>
+                <!-- Manali -->
+                <div class="col-lg-4 col-md-6 gsap-stagger-item">
+                    <div class="dest-card">
+                        <img src="https://images.unsplash.com/photo-1605649487212-4dcfd3fb0b3b?auto=format&fit=crop&w=600&q=80" alt="Manali">
+                        <div class="dest-rating"><i class="fas fa-star text-warning"></i> 4.7</div>
+                        <div class="dest-overlay">
+                            <h3 class="dest-title">Manali</h3>
+                            <div class="dest-meta">
+                                <span><i class="far fa-clock"></i> 5 Days</span>
+                                <span class="fw-bold">From ₹15,000</span>
+                            </div>
+                            <button class="btn btn-sm btn-outline-light mt-3 w-50">Explore</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Rishikesh -->
+                <div class="col-lg-4 col-md-6 gsap-stagger-item">
+                    <div class="dest-card">
+                        <img src="https://images.unsplash.com/photo-1598094625575-b46e8c7407a1?auto=format&fit=crop&w=600&q=80" alt="Rishikesh">
+                        <div class="dest-rating"><i class="fas fa-star text-warning"></i> 4.8</div>
+                        <div class="dest-overlay">
+                            <h3 class="dest-title">Rishikesh</h3>
+                            <div class="dest-meta">
+                                <span><i class="far fa-clock"></i> 3 Days</span>
+                                <span class="fw-bold">From ₹8,000</span>
+                            </div>
+                            <button class="btn btn-sm btn-outline-light mt-3 w-50">Explore</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Nainital -->
+                <div class="col-lg-4 col-md-6 gsap-stagger-item">
+                    <div class="dest-card">
+                        <img src="https://images.unsplash.com/photo-1626243260783-f8a463a03dd4?auto=format&fit=crop&w=600&q=80" alt="Nainital">
+                        <div class="dest-rating"><i class="fas fa-star text-warning"></i> 4.6</div>
+                        <div class="dest-overlay">
+                            <h3 class="dest-title">Nainital</h3>
+                            <div class="dest-meta">
+                                <span><i class="far fa-clock"></i> 3 Days</span>
+                                <span class="fw-bold">From ₹10,000</span>
+                            </div>
+                            <button class="btn btn-sm btn-outline-light mt-3 w-50">Explore</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Udaipur -->
+                <div class="col-lg-4 col-md-6 gsap-stagger-item">
+                    <div class="dest-card">
+                        <img src="https://images.unsplash.com/photo-1615836245337-f5b9b2303f10?auto=format&fit=crop&w=600&q=80" alt="Udaipur">
+                        <div class="dest-rating"><i class="fas fa-star text-warning"></i> 4.9</div>
+                        <div class="dest-overlay">
+                            <h3 class="dest-title">Udaipur</h3>
+                            <div class="dest-meta">
+                                <span><i class="far fa-clock"></i> 4 Days</span>
+                                <span class="fw-bold">From ₹18,000</span>
+                            </div>
+                            <button class="btn btn-sm btn-outline-light mt-3 w-50">Explore</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Gallery Section -->
-    <section class="py-5">
+    <!-- 5. AI Features -->
+    <section id="ai-planner" class="py-24">
         <div class="container">
-            <div class="section-title gsap-fade-up">
-                <h6>Inspiration</h6>
-                <h2>Travel Gallery</h2>
+            <div class="section-header gsap-fade-up">
+                <h6>Smart Technology</h6>
+                <h2>AI Features Showcase</h2>
+                <p>We use cutting-edge AI to make your travel planning flawless and effortless.</p>
             </div>
-            <div class="gallery-grid gsap-fade-up">
-                <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a?auto=format&fit=crop&w=600&q=80"
-                        alt="Paris">
-                    <div class="gallery-overlay">
-                        <h4 class="text-white">Paris</h4>
+            <div class="row g-4 gsap-stagger-container">
+                <div class="col-lg-4 col-md-6 gsap-stagger-item">
+                    <div class="ai-card">
+                        <div class="ai-icon"><i class="fas fa-route"></i></div>
+                        <h4>AI Trip Planner</h4>
+                        <p class="text-muted mb-0">Generates a minute-by-minute itinerary tailored precisely to your personal travel style.</p>
                     </div>
                 </div>
-                <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=600&q=80"
-                        alt="Goa">
-                    <div class="gallery-overlay">
-                        <h4 class="text-white">Goa</h4>
+                <div class="col-lg-4 col-md-6 gsap-stagger-item">
+                    <div class="ai-card">
+                        <div class="ai-icon"><i class="fas fa-wallet"></i></div>
+                        <h4>Smart Budget Calculator</h4>
+                        <p class="text-muted mb-0">Analyzes millions of data points to optimize your spending without sacrificing luxury.</p>
                     </div>
                 </div>
-                <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=600&q=80"
-                        alt="Dubai">
-                    <div class="gallery-overlay">
-                        <h4 class="text-white">Dubai</h4>
+                <div class="col-lg-4 col-md-6 gsap-stagger-item">
+                    <div class="ai-card">
+                        <div class="ai-icon"><i class="fas fa-cloud-sun"></i></div>
+                        <h4>Weather Prediction</h4>
+                        <p class="text-muted mb-0">Dynamic scheduling based on real-time and historical weather forecasts.</p>
                     </div>
                 </div>
-                <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=600&q=80"
-                        alt="Bali">
-                    <div class="gallery-overlay">
-                        <h4 class="text-white">Bali</h4>
+                <div class="col-lg-4 col-md-6 gsap-stagger-item">
+                    <div class="ai-card">
+                        <div class="ai-icon"><i class="fas fa-hotel"></i></div>
+                        <h4>Hotel Suggestions</h4>
+                        <p class="text-muted mb-0">Recommends the best stays based on proximity to your planned daily activities.</p>
                     </div>
                 </div>
-                <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1506929562872-bb421503ef21?auto=format&fit=crop&w=600&q=80"
-                        alt="Beach">
-                    <div class="gallery-overlay">
-                        <h4 class="text-white">Maldives</h4>
+                <div class="col-lg-4 col-md-6 gsap-stagger-item">
+                    <div class="ai-card">
+                        <div class="ai-icon"><i class="fas fa-gem"></i></div>
+                        <h4>Hidden Gems Discovery</h4>
+                        <p class="text-muted mb-0">Bypass the tourist traps with AI-curated secret spots known only to locals.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 gsap-stagger-item">
+                    <div class="ai-card">
+                        <div class="ai-icon"><i class="fas fa-utensils"></i></div>
+                        <h4>Local Food Recommendations</h4>
+                        <p class="text-muted mb-0">Personalized dining options matched to your dietary preferences and budget.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Comprehensive Footer -->
-    <footer id="contact">
+    <!-- 6. Internship / Real-Time Project -->
+    <section id="internship" class="container">
+        <div class="internship-section gsap-fade-up">
+            <div class="row align-items-center m-0">
+                <div class="col-lg-7">
+                    <div class="internship-content">
+                        <h6 class="text-accent fw-bold text-uppercase tracking-wider mb-3">Product To Internship</h6>
+                        <h2 class="text-white mb-4" style="font-size: 3rem;">Kickstart Your Tech Career in Travel</h2>
+                        <p class="text-white-50 fs-5 mb-5">Join our exclusive real-time projects and live mentorship programs. Build real travel-tech products while earning an industry-recognized certificate.</p>
+                        
+                        <ul class="list-unstyled check-list mb-5">
+                            <li><i class="fas fa-check-circle fs-4"></i> Real-time Industrial Projects</li>
+                            <li><i class="fas fa-check-circle fs-4"></i> Live Expert Mentorship</li>
+                            <li><i class="fas fa-check-circle fs-4"></i> Official Internship Certificate</li>
+                            <li><i class="fas fa-check-circle fs-4"></i> 100% Industry Experience</li>
+                        </ul>
+                        
+                        <a href="#" class="btn btn-light rounded-pill px-4 py-3 fw-bold text-primary-theme fs-5">Apply For Internship</a>
+                    </div>
+                </div>
+                <div class="col-lg-5 position-relative">
+                    <div class="internship-image-wrapper">
+                        <!-- Dashboard mockup placeholder -->
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80" alt="Dashboard Dashboard Mockup">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. Why Choose Us -->
+    <section class="py-24 bg-light-blue">
         <div class="container">
+            <div class="section-header gsap-fade-up">
+                <h6>Our Advantage</h6>
+                <h2>Why Choose Roamerly</h2>
+            </div>
+            <div class="row g-4 gsap-stagger-container">
+                <div class="col-lg-4 col-md-6 gsap-stagger-item">
+                    <div class="feature-box bg-white">
+                        <div class="feature-icon"><i class="fas fa-microchip"></i></div>
+                        <div class="feature-text">
+                            <h5>AI Powered</h5>
+                            <p class="text-muted small mb-0">Cutting-edge algorithms plan your perfect trip in seconds.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 gsap-stagger-item">
+                    <div class="feature-box bg-white">
+                        <div class="feature-icon"><i class="fas fa-piggy-bank"></i></div>
+                        <div class="feature-text">
+                            <h5>Budget Optimized</h5>
+                            <p class="text-muted small mb-0">We maximize your luxury experience within your exact budget.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 gsap-stagger-item">
+                    <div class="feature-box bg-white">
+                        <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
+                        <div class="feature-text">
+                            <h5>Secure Booking</h5>
+                            <p class="text-muted small mb-0">100% secure payments and ATOL protected bookings.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 gsap-stagger-item">
+                    <div class="feature-box bg-white">
+                        <div class="feature-icon"><i class="fas fa-map-marked"></i></div>
+                        <div class="feature-text">
+                            <h5>Hidden Locations</h5>
+                            <p class="text-muted small mb-0">Discover places not found in standard tourist guides.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 gsap-stagger-item">
+                    <div class="feature-box bg-white">
+                        <div class="feature-icon"><i class="fas fa-user-edit"></i></div>
+                        <div class="feature-text">
+                            <h5>Personalized Plans</h5>
+                            <p class="text-muted small mb-0">Tailor-made itineraries that match your exact vibe.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 gsap-stagger-item">
+                    <div class="feature-box bg-white">
+                        <div class="feature-icon"><i class="fas fa-bolt"></i></div>
+                        <div class="feature-text">
+                            <h5>Fast Support</h5>
+                            <p class="text-muted small mb-0">24/7 dedicated travel concierges ready to help.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. Testimonials -->
+    <section class="py-24">
+        <div class="container text-center">
+            <div class="section-header gsap-fade-up">
+                <h6>User Stories</h6>
+                <h2>Traveler Reviews</h2>
+            </div>
+            
+            <div id="testimonialCarousel" class="carousel slide pb-5 gsap-fade-up" data-bs-ride="carousel">
+                <div class="carousel-inner" style="max-width: 800px; margin: 0 auto;">
+                    <div class="carousel-item active">
+                        <div class="testimonial-item">
+                            <div class="testi-user justify-content-center">
+                                <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sarah">
+                                <div class="text-start">
+                                    <h5 class="mb-0">Sarah Jenkins</h5>
+                                    <small class="text-muted">Trip to Kashmir</small>
+                                </div>
+                            </div>
+                            <div class="stars fs-5"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                            <p class="text-muted fs-5 fst-italic">"The AI planner crafted an itinerary that was absolutely flawless. We found hidden snow spots in Gulmarg that weren't crowded at all. Truly magical!"</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="testimonial-item">
+                            <div class="testi-user justify-content-center">
+                                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Rahul">
+                                <div class="text-start">
+                                    <h5 class="mb-0">Rahul Sharma</h5>
+                                    <small class="text-muted">Trip to Goa</small>
+                                </div>
+                            </div>
+                            <div class="stars fs-5"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
+                            <p class="text-muted fs-5 fst-italic">"We wanted a quiet luxury trip in South Goa and the budget calculator saved us 30% on our hotel. Seamless booking experience!"</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev" style="filter: invert(1);">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next" style="filter: invert(1);">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. Gallery / Reels Style -->
+    <section class="pb-24">
+        <div class="container-fluid px-4">
+            <div class="section-header gsap-fade-up">
+                <h6>Follow Us</h6>
+                <h2>Traveler Memories</h2>
+            </div>
+            <div class="gallery-grid gsap-stagger-container">
+                <div class="gallery-item gsap-stagger-item">
+                    <img src="https://images.unsplash.com/photo-1523482580672-f109ba8cb9be?auto=format&fit=crop&w=500&q=80" alt="Gallery">
+                    <div class="gallery-overlay"><i class="fab fa-instagram"></i></div>
+                </div>
+                <div class="gallery-item gsap-stagger-item">
+                    <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=500&q=80" alt="Gallery">
+                    <div class="gallery-overlay"><i class="fab fa-instagram"></i></div>
+                </div>
+                <div class="gallery-item gsap-stagger-item">
+                    <img src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a?auto=format&fit=crop&w=500&q=80" alt="Gallery">
+                    <div class="gallery-overlay"><i class="fab fa-instagram"></i></div>
+                </div>
+                <div class="gallery-item gsap-stagger-item">
+                    <img src="https://images.unsplash.com/photo-1503614472-8c93d56e92ce?auto=format&fit=crop&w=500&q=80" alt="Gallery">
+                    <div class="gallery-overlay"><i class="fab fa-instagram"></i></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 10. FAQ Section -->
+    <section class="py-24 bg-light-blue">
+        <div class="container" style="max-width: 800px;">
+            <div class="section-header gsap-fade-up">
+                <h6>Got Questions?</h6>
+                <h2>Frequently Asked Questions</h2>
+            </div>
+            <div class="accordion gsap-fade-up" id="faqAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                            How does the AI Trip Planner work?
+                        </button>
+                    </h2>
+                    <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Our AI analyzes your inputs (budget, interests, days) and cross-references millions of data points to generate a highly optimized, day-by-day itinerary instantly.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                            Are the bookings ATOL protected?
+                        </button>
+                    </h2>
+                    <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Yes, all flights and flight-inclusive holidays booked through Roamerly are fully ATOL protected for your peace of mind.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                            Can I modify the AI-generated itinerary?
+                        </button>
+                    </h2>
+                    <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Absolutely! The AI provides a baseline plan, which you can easily tweak, add/remove locations, and adjust timings before finalizing your booking.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                            Who can apply for the Internship program?
+                        </button>
+                    </h2>
+                    <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Anyone passionate about Travel-Tech! We accept students, freshers, and professionals looking for real-time industrial project experience.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 11. Pre-Footer CTA -->
+    <section class="container gsap-fade-up" style="margin-top: -40px; position: relative; z-index: 10;">
+        <div class="cta-section shadow-lg">
+            <h2>Ready For Your Next Adventure?</h2>
+            <p class="fs-5 text-white-50 mb-4">Join thousands of travelers exploring India smarter.</p>
+            <a href="#search" class="btn btn-light rounded-pill px-5 py-3 fw-bold text-primary-theme fs-5 shadow">Start Planning Now</a>
+        </div>
+    </section>
+
+    <!-- 12. Footer -->
+    <footer>
+        <div class="container pt-5 mt-5">
             <div class="row g-5">
-                <div class="col-lg-3 col-md-6">
-                    <a href="#" class="d-inline-block mb-4">
-                        <img src="assets/images/logo.png" alt="Roamerly Logo"
-                            style="height: 100px; margin-left: -15px; margin-top: -10px; margin-bottom: -10px;">
+                <div class="col-lg-4 col-md-6">
+                    <a href="index.html" class="d-inline-block mb-4">
+                        <img src="assets/images/logo.png" alt="Roamerly Logo" style="height: 100px; filter: brightness(0) invert(1);">
                     </a>
-                    <p class="text-muted small mb-4">Roamerly is a leading travel brand under trading name of FLIGHTS &
-                        HOLIDAYS UK LTD. Your money is 100% safe with us.</p>
-
-                    <h5 class="footer-title mt-4">Get in Touch</h5>
-                    <p class="small text-muted mb-1"><i class="fas fa-envelope me-2"></i> info@roamerly.co.uk</p>
-                    <p class="small text-muted mb-1"><i class="fas fa-phone-alt me-2"></i> 0204 553 5491</p>
-                    <p class="small text-muted"><i class="fas fa-map-marker-alt me-2"></i> Suite B6:02C Vista Centre
-                        Salisbury Road, Hounslow TW4 6JQ United Kingdom</p>
-
-                    <div class="footer-social mt-3">
+                    <p class="small mb-4">Roamerly is a premium AI-powered travel brand. We combine luxury service with advanced tech to craft perfect itineraries for modern travelers.</p>
+                    <div class="social-icons mt-4">
                         <a href="#"><i class="fab fa-facebook-f"></i></a>
                         <a href="#"><i class="fab fa-twitter"></i></a>
                         <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
-
+                
                 <div class="col-lg-2 col-md-6">
                     <h5 class="footer-title">Quick Links</h5>
-                    <a href="#" class="footer-link">Flights</a>
-                    <a href="#" class="footer-link">Business & First Class</a>
-                    <a href="#" class="footer-link">Group Travel</a>
-                    <a href="#" class="footer-link">Airlines</a>
-                    <a href="#" class="footer-link">About Us</a>
-                    <a href="contact.html" class="footer-link">Contact Us</a>
-                    <a href="#" class="footer-link">Privacy Policy</a>
-                    <a href="#" class="footer-link">Terms of Use</a>
-                    <a href="#" class="footer-link">Customer Reviews</a>
-                    <a href="#" class="footer-link">Blog</a>
+                    <a href="#" class="footer-link">Home</a>
+                    <a href="#" class="footer-link">AI Planner</a>
+                    <a href="#" class="footer-link">Packages</a>
+                    <a href="#" class="footer-link">Internships</a>
+                    <a href="#" class="footer-link">Contact Us</a>
                 </div>
-
+                
                 <div class="col-lg-2 col-md-6">
-                    <h5 class="footer-title">Flights To</h5>
-                    <a href="usa.html" class="footer-link">USA</a>
-                    <a href="canada.html" class="footer-link">Canada</a>
-                    <a href="australia.html" class="footer-link">Australia</a>
-                    <a href="new-zealand.html" class="footer-link">New Zealand</a>
-                    <a href="middle-east.html" class="footer-link">Middle East</a>
-                    <a href="africa.html" class="footer-link">Africa</a>
-                    <a href="far-east.html" class="footer-link">Far East</a>
-                    <a href="latin-america.html" class="footer-link">Latin America</a>
-                    <a href="europe.html" class="footer-link">Europe</a>
+                    <h5 class="footer-title">Popular Destinations</h5>
+                    <a href="#" class="footer-link">Goa</a>
+                    <a href="#" class="footer-link">Manali</a>
+                    <a href="#" class="footer-link">Kashmir</a>
+                    <a href="#" class="footer-link">Rishikesh</a>
+                    <a href="#" class="footer-link">Udaipur</a>
                 </div>
-
-                <div class="col-lg-2 col-md-6">
-                    <h5 class="footer-title">Top Destinations <span class="badge bg-danger ms-1">NEW</span></h5>
-                    <a href="#" class="footer-link">Africa & S.Africa</a>
-                    <a href="#" class="footer-link">Australia & New Zealand</a>
-                    <a href="canada.html" class="footer-link">Canada</a>
-                    <a href="#" class="footer-link">Jamaica & Caribbean</a>
-                    <a href="#" class="footer-link">New York</a>
-                    <a href="#" class="footer-link">Orlando</a>
-                    <a href="#" class="footer-link">Portugal</a>
-                </div>
-
-                <div class="col-lg-3 col-md-12">
-                    <h5 class="footer-title">Holiday Types</h5>
-                    <a href="#" class="footer-link">All Inclusive</a>
-                    <a href="#" class="footer-link">City Breaks</a>
-                    <a href="#" class="footer-link">Honeymoons</a>
-                    <a href="#" class="footer-link">Luxury & Beach</a>
-
-                    <h5 class="footer-title mt-4">Holiday Deals</h5>
-                    <a href="#" class="footer-link">Italy Holiday Deals</a>
-                    <a href="#" class="footer-link">Naples Holiday Deals</a>
-                    <a href="#" class="footer-link">Vietnam Holiday Deals</a>
+                
+                <div class="col-lg-4 col-md-12">
+                    <h5 class="footer-title">Join our Newsletter</h5>
+                    <p class="small mb-3">Get exclusive luxury deals and AI itineraries straight to your inbox.</p>
+                    <div class="d-flex mb-4">
+                        <input type="email" class="form-control me-2 border-0 bg-secondary bg-opacity-25 text-white" placeholder="Email address">
+                        <button class="btn btn-primary-theme rounded-3 px-3">Subscribe</button>
+                    </div>
+                    <div class="d-flex gap-3 fs-3 text-white-50 mt-4">
+                        <i class="fab fa-cc-visa"></i>
+                        <i class="fab fa-cc-mastercard"></i>
+                        <i class="fab fa-cc-amex"></i>
+                        <i class="fab fa-cc-paypal"></i>
+                    </div>
                 </div>
             </div>
-
-            <div class="footer-bottom">
-                <div class="payment-cards mb-4">
-                    <h6 class="mb-3">Book with Confidence - Pay Online</h6>
-                    <i class="fab fa-cc-visa"></i>
-                    <i class="fab fa-cc-mastercard"></i>
-                    <i class="fab fa-cc-amex"></i>
-                    <i class="fab fa-cc-paypal"></i>
-                </div>
-                <p class="small text-start mb-3">Roamerly is a leading travel brand under trading name of FLIGHTS &
-                    HOLIDAYS UK LTD (Company Reg No.: 09162028, VAT No.: 204729911, IATA Certified). All the flights and
-                    flight-inclusive holidays on this website are financially protected by the ATOL scheme. When you pay
-                    you will be supplied with an ATOL Certificate. Please ask for it and check to ensure that everything
-                    you booked (flights, hotels and other services) is listed on it. For more information go to:
-                    www.atol.org.uk/ATOLCertificate</p>
-                <p class="small text-start mb-3">For the latest travel advice from the Foreign & Commonwealth Office
-                    including security and local laws, plus passport and visa information, click here.</p>
-                <p class="small text-start mb-0">Disclaimer: Roamerly reserves all rights on the contents (Images, HTML
-                    Codes, and Contents) that are available on our website. In case any content is violating privacy,
-                    report us at info@roamerly.co.uk.</p>
-                <hr class="border-secondary my-4">
-                <div class="d-flex justify-content-between flex-wrap">
-                    <p class="mb-0">&copy; 2026 Roamerly.co.uk | All Rights Reserved.</p>
-                    <p class="mb-0">Terms & Conditions | Privacy Policy</p>
+            
+            <div class="footer-bottom text-center">
+                <p class="small mb-3 text-white-50">Roamerly is a leading travel brand under trading name of FLIGHTS & HOLIDAYS UK LTD. All flights and flight-inclusive holidays are ATOL protected.</p>
+                <div class="d-flex justify-content-between flex-wrap mt-4 pt-3" style="border-top: 1px solid rgba(255,255,255,0.1);">
+                    <p class="mb-0 text-white-50">&copy; 2026 Roamerly.co.uk | All Rights Reserved.</p>
+                    <p class="mb-0 text-white-50">info@roamerly.co.uk | 0204 553 5491</p>
                 </div>
             </div>
         </div>
     </footer>
 
-    <!-- Floating Buttons -->
-    <a href="https://wa.me/1234567890" target="_blank" class="floating-btn whatsapp-btn">
-        <i class="fab fa-whatsapp"></i>
+    <!-- AI Chat Assistant (Floating) -->
+    <a href="#" class="btn-primary-theme rounded-circle position-fixed shadow-lg" style="bottom: 30px; right: 30px; width: 60px; height: 60px; z-index: 999;">
+        <i class="fas fa-comment-dots fs-3 text-white"></i>
     </a>
-    <button id="back-top-btn" class="floating-btn back-top-btn">
-        <i class="fas fa-arrow-up"></i>
-    </button>
-
-    <!-- Schedule Callback Toggle Button -->
-    <div id="callback-toggle-btn" class="callback-toggle-btn">
-        <i class="fas fa-phone-volume fa-shake"></i> Call & Get Free Quote Now!
-    </div>
-
-    <!-- Schedule Callback Widget -->
-    <div id="callback-widget" class="callback-widget">
-        <i class="fas fa-times widget-close" id="callback-close"></i>
-        <h5 class="mb-2 text-gradient"><i class="fas fa-headset me-2"></i>Schedule Callback</h5>
-        <p class="small text-muted mb-3">Apologies, we are currently out of hours. Can we call you back? Enter your
-            number below and let us know when is best for you.</p>
-        <div class="input-group mb-3">
-            <span class="input-group-text bg-transparent border-end-0 border-secondary">+44</span>
-            <input type="text" class="form-control border-start-0 ps-0" placeholder="Enter your number">
-        </div>
-        <button class="btn-luxury w-100 py-2 fs-6">Schedule Callback</button>
-        <p class="small text-center text-muted mt-3 mb-0">Powered by ResponseiQ</p>
-    </div>
-
-    <!-- AI Chatbot Toggle -->
-    <div id="chatbot-toggle-btn" class="chatbot-toggle-btn">
-        <i class="fas fa-robot"></i>
-    </div>
-
-    <!-- AI Chatbot Widget -->
-    <div id="chatbot-widget" class="chatbot-widget">
-        <div class="chatbot-header">
-            <span><i class="fas fa-robot me-2"></i> Roamerly AI</span>
-            <i class="fas fa-times" id="chatbot-close" style="cursor:pointer;"></i>
-        </div>
-        <div class="chatbot-body">
-            <div class="chat-msg bot">
-                Hello! I am your Roamerly AI assistant. How can I help you plan your perfect trip today?
-            </div>
-        </div>
-        <div class="chatbot-footer">
-            <input type="text" class="chatbot-input" placeholder="Type a message...">
-            <button class="chatbot-send"><i class="fas fa-paper-plane"></i></button>
-        </div>
-    </div>
 
     <!-- JS Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <!-- GSAP Libraries -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Navbar Scroll Effect
+            const navbar = document.querySelector('.navbar');
+            const logo = document.getElementById('nav-logo');
+            
+            window.addEventListener('scroll', () => {
+                if(window.scrollY > 50) {
+                    navbar.classList.add('scrolled');
+                    navbar.style.background = 'rgba(255, 255, 255, 0.98)';
+                    logo.style.filter = 'none';
+                    document.querySelectorAll('.nav-link').forEach(link => {
+                        link.classList.remove('text-white');
+                        link.classList.add('text-dark');
+                    });
+                    document.querySelector('.navbar-toggler i').classList.remove('text-white');
+                    document.querySelector('.navbar-toggler i').classList.add('text-dark');
+                } else {
+                    navbar.classList.remove('scrolled');
+                    navbar.style.background = 'rgba(15, 23, 42, 0.95)';
+                    logo.style.filter = 'brightness(0) invert(1)';
+                    document.querySelectorAll('.nav-link').forEach(link => {
+                        link.classList.remove('text-dark');
+                        link.classList.add('text-white');
+                    });
+                    document.querySelector('.navbar-toggler i').classList.remove('text-dark');
+                    document.querySelector('.navbar-toggler i').classList.add('text-white');
+                }
+            });
 
-    <!-- Custom JS -->
-    <script src="assets/js/main.js"></script>
+            // GSAP Animations
+            if (typeof gsap !== 'undefined' && typeof ScrollTrigger !== 'undefined') {
+                gsap.registerPlugin(ScrollTrigger);
+
+                gsap.utils.toArray('.gsap-fade-up').forEach(element => {
+                    gsap.fromTo(element, 
+                        { y: 40, opacity: 0 },
+                        { y: 0, opacity: 1, duration: 1, ease: "power3.out", scrollTrigger: { trigger: element, start: "top 85%" } }
+                    );
+                });
+
+                gsap.utils.toArray('.gsap-stagger-container').forEach(container => {
+                    const cards = container.querySelectorAll('.gsap-stagger-item');
+                    if (cards.length > 0) {
+                        gsap.fromTo(cards, 
+                            { y: 40, opacity: 0 },
+                            { y: 0, opacity: 1, duration: 0.8, stagger: 0.15, ease: "power3.out", scrollTrigger: { trigger: container, start: "top 85%" } }
+                        );
+                    }
+                });
+            }
+
+            // Remove Preloader
+            setTimeout(() => {
+                document.getElementById('preloader').style.display = 'none';
+            }, 800);
+        });
+    </script>
 </body>
-
 </html>
