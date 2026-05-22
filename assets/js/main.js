@@ -172,4 +172,19 @@ document.addEventListener('DOMContentLoaded', () => {
             );
         });
     }
+
+    // Search Overlay Toggle
+    const searchBtn = document.getElementById('navbarSearchBtn');
+    const searchOverlay = document.getElementById('search-overlay');
+    const searchClose = document.getElementById('searchClose');
+    
+    if (searchBtn && searchOverlay && searchClose) {
+        searchBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            searchOverlay.classList.add('open');
+        });
+        searchClose.addEventListener('click', () => {
+            searchOverlay.classList.remove('open');
+        });
+    }
 });

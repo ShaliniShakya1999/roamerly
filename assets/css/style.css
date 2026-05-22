@@ -900,3 +900,289 @@ footer { padding: 80px 0 30px; border-top: 1px solid rgba(0,0,0,0.05); backgroun
     .masonry-item.tall, .masonry-item.wide { grid-row: auto; grid-column: auto; height: 250px; }
 }
 
+
+/* ----------------------------------------------------
+   PREMIUM NAVBAR & FOOTER REVAMP
+   ---------------------------------------------------- */
+
+/* Sticky Glassmorphism Navbar Styles */
+.navbar {
+    padding: 16px 0;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    background: rgba(255, 255, 255, 0.85) !important;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(15, 23, 42, 0.08);
+    box-shadow: 0 10px 30px -10px rgba(15, 23, 42, 0.08);
+    z-index: 1000;
+}
+
+.navbar .nav-link {
+    color: var(--text-dark) !important;
+    font-weight: 550;
+    letter-spacing: -0.01em;
+}
+.navbar .nav-link:hover {
+    color: var(--primary-blue) !important;
+}
+
+.navbar-brand img {
+    filter: none !important;
+    transition: all 0.4s ease;
+}
+
+/* Scrolled Thinner State */
+.navbar.scrolled {
+    padding: 10px 0;
+}
+
+/* Dark Mode Sticky Navbar */
+html[data-theme="dark"] .navbar {
+    background: rgba(15, 23, 42, 0.85) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.3);
+}
+html[data-theme="dark"] .navbar .nav-link {
+    color: rgba(248, 250, 252, 0.9) !important;
+}
+html[data-theme="dark"] .navbar .nav-link:hover {
+    color: var(--primary-blue) !important;
+}
+html[data-theme="dark"] .navbar-brand img {
+    filter: brightness(0) invert(1) !important;
+}
+
+/* Underline link animation */
+.navbar .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    left: 12px;
+    background-color: var(--primary-blue);
+    transition: width 0.3s ease;
+}
+.navbar .nav-link:hover::after {
+    width: calc(100% - 24px);
+}
+
+/* Search Icon Styling */
+.nav-search-btn {
+    color: var(--text-dark);
+    font-size: 18px;
+    transition: var(--transition);
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0;
+}
+html[data-theme="dark"] .nav-search-btn {
+    color: #fff;
+}
+.nav-search-btn:hover {
+    transform: scale(1.1);
+    color: var(--primary-blue);
+}
+
+/* Hamburger Toggler Icon Colors */
+.navbar-toggler i {
+    color: var(--text-dark) !important;
+}
+html[data-theme="dark"] .navbar-toggler i {
+    color: #fff !important;
+}
+
+/* Fullscreen Search Overlay */
+.search-overlay {
+    position: fixed;
+    top: 0; left: 0; width: 100vw; height: 100vh;
+    background: rgba(15, 23, 42, 0.96);
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+    z-index: 2500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.search-overlay.open {
+    opacity: 1;
+    pointer-events: auto;
+}
+.search-overlay-close {
+    position: absolute;
+    top: 40px; right: 40px;
+    color: #fff;
+    font-size: 32px;
+    cursor: pointer;
+    transition: var(--transition);
+}
+.search-overlay-close:hover {
+    transform: rotate(90deg) scale(1.1);
+    color: var(--accent-orange);
+}
+.search-input-group {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 50px;
+    padding: 8px 8px 8px 24px;
+    display: flex;
+    align-items: center;
+}
+.search-input-group input {
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    outline: none;
+    padding: 10px 0;
+    width: 100%;
+}
+.search-input-group input::placeholder {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+/* Footer Premium Styling */
+footer {
+    background: #0F172A !important;
+    color: rgba(255, 255, 255, 0.8) !important;
+    padding-top: 100px;
+    padding-bottom: 40px;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    font-family: var(--font-body);
+}
+
+.footer-title {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 25px;
+    position: relative;
+}
+.footer-title::after {
+    content: '';
+    position: absolute;
+    left: 0; bottom: -8px;
+    width: 30px; height: 2px;
+    background-color: var(--primary-blue);
+}
+
+.footer-link {
+    color: rgba(255, 255, 255, 0.6) !important;
+    display: block;
+    margin-bottom: 12px;
+    transition: var(--transition);
+    font-size: 14px;
+    font-weight: 500;
+}
+.footer-link:hover {
+    color: var(--primary-blue) !important;
+    transform: translateX(5px);
+}
+
+/* Footer Newsletter Styles */
+.footer-newsletter-box {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    padding: 30px;
+    margin-top: 20px;
+}
+.newsletter-input-group {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 50px;
+    padding: 5px 5px 5px 20px;
+    display: flex;
+    align-items: center;
+}
+.newsletter-input-group input {
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 14px;
+    outline: none;
+    flex-grow: 1;
+}
+.newsletter-input-group input::placeholder {
+    color: rgba(255, 255, 255, 0.4);
+}
+.newsletter-input-group button {
+    background: var(--primary-blue);
+    border: none;
+    border-radius: 50px;
+    color: #fff;
+    padding: 10px 24px;
+    font-weight: 600;
+    transition: var(--transition);
+}
+.newsletter-input-group button:hover {
+    background: var(--accent-orange);
+    transform: scale(1.05);
+}
+
+/* Mini Instagram Gallery */
+.insta-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-top: 15px;
+}
+.insta-item {
+    aspect-ratio: 1/1;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+}
+.insta-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+.insta-item:hover img {
+    transform: scale(1.15);
+}
+
+/* Trust Badges Strip */
+.footer-trust-badges {
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 30px 0;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.trust-badge-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.8);
+}
+.trust-badge-item i {
+    font-size: 24px;
+    color: var(--primary-blue);
+}
+.trust-badge-item span {
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+/* Bottom Bar */
+.footer-bottom {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.4) !important;
+}
+.footer-bottom a {
+    color: rgba(255, 255, 255, 0.4) !important;
+    transition: color 0.3s;
+}
+.footer-bottom a:hover {
+    color: var(--primary-blue) !important;
+}
