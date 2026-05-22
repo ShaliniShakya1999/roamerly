@@ -24,29 +24,71 @@
         <i class="fas fa-plane bg-airplane"></i>
     </div>
 
-    <!-- Sticky Navbar -->
-    <nav class="navbar navbar-expand-lg fixed-top">
-        <div class="container nav-inner transition">
+    <!-- Top Bar -->
+    <div class="top-bar d-none d-lg-block">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="d-flex align-items-center">
+                <span class="me-4"><i class="fas fa-phone-alt me-2"></i> +91 70156 38389</span>
+                <span>We are open 24 hours a day / 7 days a week</span>
+            </div>
+            <div class="top-bar-logos">
+                <span>Protected by:</span>
+                <i class="fas fa-shield-alt ms-2 text-primary"></i> <span class="ms-1 fw-bold">ATOL</span>
+                <i class="fas fa-plane-departure ms-3 text-info"></i> <span class="ms-1 fw-bold">IATA</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
             <a class="navbar-brand" href="index.html">
-                <img src="assets/images/logo.png" alt="Roamerly Logo">
+                <img src="assets/images/logo.png" alt="Roamerly Logo"
+                    style="height: 100px; margin-top: -15px; margin-bottom: -15px;">
             </a>
-            
+
             <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <i class="fas fa-bars fs-4 text-dark"></i>
+                <i class="fas fa-bars fs-3"></i>
             </button>
-            
+
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mx-auto">
-                    <li class="nav-item"><a class="nav-link" href="#destinations">Destinations</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#how-it-works">How It Works</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#features">AI Features</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#packages">Packages</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Global
+                            Flights</a>
+                        <ul class="dropdown-menu glass-card">
+                            <li><a class="dropdown-item" href="usa.html">USA</a></li>
+                            <li><a class="dropdown-item" href="canada.html">Canada</a></li>
+                            <li><a class="dropdown-item" href="australia.html">Australia</a></li>
+                            <li><a class="dropdown-item" href="new-zealand.html">New Zealand</a></li>
+                            <li><a class="dropdown-item" href="middle-east.html">Middle East</a></li>
+                            <li><a class="dropdown-item" href="africa.html">Africa</a></li>
+                            <li><a class="dropdown-item" href="far-east.html">Far East</a></li>
+                            <li><a class="dropdown-item" href="latin-america.html">Latin America</a></li>
+                            <li><a class="dropdown-item" href="caribbean.html">Caribbean</a></li>
+                            <li><a class="dropdown-item" href="asia.html">Asia</a></li>
+                            <li><a class="dropdown-item" href="mexico.html">Mexico</a></li>
+                            <li><a class="dropdown-item" href="europe.html">Europe</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#packages">Holidays</a></li>
+                    <li class="nav-item"><a class="nav-link" href="india.html">India Packages</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Premium
+                            Travel</a>
+                        <ul class="dropdown-menu glass-card">
+                            <li><a class="dropdown-item" href="#">Business & First Class</a></li>
+                            <li><a class="dropdown-item" href="#">Group Travel Booking</a></li>
+                            <li><a class="dropdown-item" href="#">Red Eye Flights</a></li>
+                        </ul>
+                    </li>
                     <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#internship">Internship</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                 </ul>
-                <div class="d-flex align-items-center gap-3 mt-3 mt-lg-0">
-                    <a href="#" class="nav-link fw-semibold p-0">Log in</a>
-                    <a href="#hero" class="btn-primary-glow" style="padding: 10px 24px; font-size: 14px;">Start Planning</a>
+                <div class="d-flex align-items-center mt-3 mt-lg-0">
+                    <button id="theme-toggle" class="theme-toggle"><i class="fas fa-sun"></i></button>
+                    <a href="contact.html" class="btn-luxury">Book Now</a>
                 </div>
             </div>
         </div>
@@ -264,7 +306,7 @@
                 <!-- Kashmir -->
                 <div class="col-lg-3 col-md-6 gsap-stagger-item">
                     <div class="dest-card shadow-sm">
-                        <img src="https://images.unsplash.com/photo-1629837943577-ed170c73362a?auto=format&fit=crop&w=600&q=80" alt="Kashmir">
+                        <img src="https://images.unsplash.com/photo-1598302842278-40e1e6988891?auto=format&fit=crop&w=600&q=80" alt="Kashmir">
                         <div class="dest-ai-badge bg-success"><i class="fas fa-leaf"></i> Nature Retreat</div>
                         <div class="dest-info">
                             <h3 style="font-size: 20px; margin-bottom: 5px;">Kashmir, India</h3>
@@ -289,6 +331,191 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Domestic Tour Packages Section -->
+    <section id="domestic-packages" class="py-24" style="background: rgba(255,255,255,0.25);">
+        <div class="container">
+            <div class="section-header gsap-fade-up">
+                <span class="section-tag">India Specials</span>
+                <h2 class="section-title">Popular Domestic Tour Packages</h2>
+                <p class="section-desc">Explore the beauty of India with our handpicked, premium domestic tour itineraries.</p>
+            </div>
+            
+            <div class="row g-4 gsap-stagger-container justify-content-center">
+                <!-- Goa Package -->
+                <div class="col-lg-4 col-md-6 gsap-stagger-item">
+                    <div class="glass-panel glass-panel-hover h-100 overflow-hidden d-flex flex-column">
+                        <div class="position-relative" style="height: 220px; overflow: hidden;">
+                            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&q=80" alt="Goa" class="w-100 h-100 object-fit-cover">
+                            <span class="position-absolute top-0 start-0 m-3 px-3 py-1 rounded-pill text-white fw-bold shadow-sm" style="font-size: 11px; background: linear-gradient(135deg, #06B6D4, #3B82F6);">🌴 Beaches & Nightlife</span>
+                        </div>
+                        <div class="p-4 d-flex flex-column flex-grow-1">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h4 class="mb-0 text-dark">Goa Holiday</h4>
+                                <span class="badge bg-light text-primary-blue border border-primary-blue rounded-pill">4 Days / 3 Nights</span>
+                            </div>
+                            <p class="text-muted small mb-4">Enjoy sun-kissed beaches, thrilling water sports, and vibrant nightlife in India's beach capital.</p>
+                            
+                            <ul class="list-unstyled mb-4 flex-grow-1">
+                                <li class="small text-muted mb-2"><i class="fas fa-check-circle text-primary-blue me-2"></i>Premium Hotel Stay</li>
+                                <li class="small text-muted mb-2"><i class="fas fa-check-circle text-primary-blue me-2"></i>Daily Buffet Breakfast</li>
+                                <li class="small text-muted mb-2"><i class="fas fa-check-circle text-primary-blue me-2"></i>Full Day Sightseeing Tour</li>
+                                <li class="small text-muted"><i class="fas fa-check-circle text-primary-blue me-2"></i>Private Airport Pickup & Drop</li>
+                            </ul>
+                            
+                            <div class="d-flex justify-content-between align-items-center mt-auto pt-3 border-top">
+                                <div>
+                                    <small class="text-muted d-block">Starting From</small>
+                                    <span class="fs-4 fw-bold text-dark">₹9,999</span>
+                                </div>
+                                <a href="https://wa.me/917015638389?text=I%20want%20to%20book%20the%20Goa%20Holiday%20Package" target="_blank" class="btn-primary-glow" style="padding: 10px 20px; font-size: 13px;">
+                                    <i class="fab fa-whatsapp"></i> Book Now
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Manali Package -->
+                <div class="col-lg-4 col-md-6 gsap-stagger-item">
+                    <div class="glass-panel glass-panel-hover h-100 overflow-hidden d-flex flex-column">
+                        <div class="position-relative" style="height: 220px; overflow: hidden;">
+                            <img src="https://images.unsplash.com/photo-1605649487212-47bdab064df7?auto=format&fit=crop&w=600&q=80" alt="Manali" class="w-100 h-100 object-fit-cover">
+                            <span class="position-absolute top-0 start-0 m-3 px-3 py-1 rounded-pill text-white fw-bold shadow-sm" style="font-size: 11px; background: linear-gradient(135deg, #3B82F6, #6366F1);">🏔 Snow Mountains</span>
+                        </div>
+                        <div class="p-4 d-flex flex-column flex-grow-1">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h4 class="mb-0 text-dark">Manali Adventure</h4>
+                                <span class="badge bg-light text-primary-blue border border-primary-blue rounded-pill">5 Days / 4 Nights</span>
+                            </div>
+                            <p class="text-muted small mb-4">Immerse yourself in spectacular snow landscapes, valley views, and adventure sports.</p>
+                            
+                            <ul class="list-unstyled mb-4 flex-grow-1">
+                                <li class="small text-muted mb-2"><i class="fas fa-check-circle text-primary-blue me-2"></i>Comfortable Volvo Travel</li>
+                                <li class="small text-muted mb-2"><i class="fas fa-check-circle text-primary-blue me-2"></i>Premium Mountain Hotel</li>
+                                <li class="small text-muted mb-2"><i class="fas fa-check-circle text-primary-blue me-2"></i>Solang Valley & Rohtang Pass</li>
+                                <li class="small text-muted"><i class="fas fa-check-circle text-primary-blue me-2"></i>Campfire & DJ Night</li>
+                            </ul>
+                            
+                            <div class="d-flex justify-content-between align-items-center mt-auto pt-3 border-top">
+                                <div>
+                                    <small class="text-muted d-block">Starting From</small>
+                                    <span class="fs-4 fw-bold text-dark">₹12,499</span>
+                                </div>
+                                <a href="https://wa.me/917015638389?text=I%20want%20to%20book%20the%20Manali%20Adventure%20Package" target="_blank" class="btn-primary-glow" style="padding: 10px 20px; font-size: 13px;">
+                                    <i class="fab fa-whatsapp"></i> Book Now
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Kashmir Package -->
+                <div class="col-lg-4 col-md-6 gsap-stagger-item">
+                    <div class="glass-panel glass-panel-hover h-100 overflow-hidden d-flex flex-column">
+                        <div class="position-relative" style="height: 220px; overflow: hidden;">
+                            <img src="https://images.unsplash.com/photo-1598302842278-40e1e6988891?auto=format&fit=crop&w=600&q=80" alt="Kashmir" class="w-100 h-100 object-fit-cover">
+                            <span class="position-absolute top-0 start-0 m-3 px-3 py-1 rounded-pill text-white fw-bold shadow-sm" style="font-size: 11px; background: linear-gradient(135deg, #EC4899, #8B5CF6);">❄ Heaven on Earth</span>
+                        </div>
+                        <div class="p-4 d-flex flex-column flex-grow-1">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h4 class="mb-0 text-dark">Kashmir Valley</h4>
+                                <span class="badge bg-light text-primary-blue border border-primary-blue rounded-pill">6 Days / 5 Nights</span>
+                            </div>
+                            <p class="text-muted small mb-4">Discover the breathtaking paradise of Kashmir with Dal Lake Shikara rides and scenic valley tours.</p>
+                            
+                            <ul class="list-unstyled mb-4 flex-grow-1">
+                                <li class="small text-muted mb-2"><i class="fas fa-check-circle text-primary-blue me-2"></i>Luxury Houseboat Stay</li>
+                                <li class="small text-muted mb-2"><i class="fas fa-check-circle text-primary-blue me-2"></i>Gulmarg Gondola & Pahalgam Tour</li>
+                                <li class="small text-muted mb-2"><i class="fas fa-check-circle text-primary-blue me-2"></i>Private Cab & Sightseeing</li>
+                                <li class="small text-muted"><i class="fas fa-check-circle text-primary-blue me-2"></i>Daily Breakfast & Dinner</li>
+                            </ul>
+                            
+                            <div class="d-flex justify-content-between align-items-center mt-auto pt-3 border-top">
+                                <div>
+                                    <small class="text-muted d-block">Starting From</small>
+                                    <span class="fs-4 fw-bold text-dark">₹18,999</span>
+                                </div>
+                                <a href="https://wa.me/917015638389?text=I%20want%20to%20book%20the%20Kashmir%20Valley%20Package" target="_blank" class="btn-primary-glow" style="padding: 10px 20px; font-size: 13px;">
+                                    <i class="fab fa-whatsapp"></i> Book Now
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Nainital Package -->
+                <div class="col-lg-4 col-md-6 gsap-stagger-item">
+                    <div class="glass-panel glass-panel-hover h-100 overflow-hidden d-flex flex-column">
+                        <div class="position-relative" style="height: 220px; overflow: hidden;">
+                            <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=600&q=80" alt="Nainital" class="w-100 h-100 object-fit-cover">
+                            <span class="position-absolute top-0 start-0 m-3 px-3 py-1 rounded-pill text-white fw-bold shadow-sm" style="font-size: 11px; background: linear-gradient(135deg, #10B981, #059669);">🌊 Lake View Retreat</span>
+                        </div>
+                        <div class="p-4 d-flex flex-column flex-grow-1">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h4 class="mb-0 text-dark">Nainital Serenity</h4>
+                                <span class="badge bg-light text-primary-blue border border-primary-blue rounded-pill">3 Days / 2 Nights</span>
+                            </div>
+                            <p class="text-muted small mb-4">Relax by the peaceful lake waters and high-altitude scenic viewpoints in Nainital.</p>
+                            
+                            <ul class="list-unstyled mb-4 flex-grow-1">
+                                <li class="small text-muted mb-2"><i class="fas fa-check-circle text-primary-blue me-2"></i>Premium Lake-view Hotel</li>
+                                <li class="small text-muted mb-2"><i class="fas fa-check-circle text-primary-blue me-2"></i>Complimentary Naini Lake Boating</li>
+                                <li class="small text-muted"><i class="fas fa-check-circle text-primary-blue me-2"></i>Local Sightseeing & Shopping Trip</li>
+                            </ul>
+                            
+                            <div class="d-flex justify-content-between align-items-center mt-auto pt-3 border-top">
+                                <div>
+                                    <small class="text-muted d-block">Starting From</small>
+                                    <span class="fs-4 fw-bold text-dark">₹7,499</span>
+                                </div>
+                                <a href="https://wa.me/917015638389?text=I%20want%20to%20book%20the%20Nainital%20Serenity%20Package" target="_blank" class="btn-primary-glow" style="padding: 10px 20px; font-size: 13px;">
+                                    <i class="fab fa-whatsapp"></i> Book Now
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Jaipur Package -->
+                <div class="col-lg-4 col-md-6 gsap-stagger-item">
+                    <div class="glass-panel glass-panel-hover h-100 overflow-hidden d-flex flex-column">
+                        <div class="position-relative" style="height: 220px; overflow: hidden;">
+                            <img src="https://images.unsplash.com/photo-1599661046289-e31897846e41?auto=format&fit=crop&w=600&q=80" alt="Jaipur" class="w-100 h-100 object-fit-cover">
+                            <span class="position-absolute top-0 start-0 m-3 px-3 py-1 rounded-pill text-white fw-bold shadow-sm" style="font-size: 11px; background: linear-gradient(135deg, #F59E0B, #D97706);">🏰 Royal Rajasthan</span>
+                        </div>
+                        <div class="p-4 d-flex flex-column flex-grow-1">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h4 class="mb-0 text-dark">Jaipur Royal</h4>
+                                <span class="badge bg-light text-primary-blue border border-primary-blue rounded-pill">3 Days / 2 Nights</span>
+                            </div>
+                            <p class="text-muted small mb-4">Step into the regal history of Amber Fort, Hawa Mahal, and cultural bazaars of the Pink City.</p>
+                            
+                            <ul class="list-unstyled mb-4 flex-grow-1">
+                                <li class="small text-muted mb-2"><i class="fas fa-check-circle text-primary-blue me-2"></i>Heritage Fort & Palace Visits</li>
+                                <li class="small text-muted mb-2"><i class="fas fa-check-circle text-primary-blue me-2"></i>Luxury Heritage Hotel Stay</li>
+                                <li class="small text-muted"><i class="fas fa-check-circle text-primary-blue me-2"></i>Certified Local Guide Service</li>
+                            </ul>
+                            
+                            <div class="d-flex justify-content-between align-items-center mt-auto pt-3 border-top">
+                                <div>
+                                    <small class="text-muted d-block">Starting From</small>
+                                    <span class="fs-4 fw-bold text-dark">₹8,999</span>
+                                </div>
+                                <a href="https://wa.me/917015638389?text=I%20want%20to%20book%20the%20Jaipur%20Royal%20Package" target="_blank" class="btn-primary-glow" style="padding: 10px 20px; font-size: 13px;">
+                                    <i class="fab fa-whatsapp"></i> Book Now
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-5 gsap-fade-up">
+                <a href="india.html" class="btn-primary-glow"><i class="fas fa-compass me-2"></i> View All Domestic Packages</a>
             </div>
         </div>
     </section>
@@ -550,54 +777,135 @@
         </div>
     </section>
 
-    <!-- 12. Footer -->
-    <footer>
-        <div class="container pt-5 mt-5">
+    <!-- Comprehensive Footer -->
+    <footer id="contact">
+        <div class="container">
             <div class="row g-5">
-                
-                <div class="col-lg-3 col-md-6 col-6">
-                    <h5 class="f-title">Company</h5>
-                    <a href="#" class="f-link">About</a>
-                    <a href="#" class="f-link">Careers</a>
-                    <a href="#" class="f-link">Contact</a>
+                <div class="col-lg-3 col-md-6">
+                    <a href="#" class="d-inline-block mb-4">
+                        <img src="assets/images/logo.png" alt="Roamerly Logo"
+                            style="height: 100px; margin-left: -15px; margin-top: -10px; margin-bottom: -10px;">
+                    </a>
+                    <p class="text-muted small mb-4">Roamerly is a leading travel brand under trading name of FLIGHTS &
+                        HOLIDAYS UK LTD. Your money is 100% safe with us.</p>
+
+                    <h5 class="footer-title mt-4">Get in Touch</h5>
+                    <p class="small text-muted mb-1"><i class="fas fa-envelope me-2"></i> roamerlyllp@gmail.com</p>
+                    <p class="small text-muted mb-1"><i class="fas fa-phone-alt me-2"></i> +91 70156 38389</p>
+                    <p class="small text-muted"><i class="fas fa-map-marker-alt me-2"></i> A-334, basement, south city 1, gurgaon, haryana -122001</p>
+
+                    <div class="footer-social mt-3">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
                 </div>
-                
-                <div class="col-lg-3 col-md-6 col-6">
-                    <h5 class="f-title">Explore</h5>
-                    <a href="#" class="f-link">Destinations</a>
-                    <a href="#" class="f-link">Packages</a>
-                    <a href="#" class="f-link">AI Planner</a>
+
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="footer-title">Quick Links</h5>
+                    <a href="#" class="footer-link">Flights</a>
+                    <a href="#" class="footer-link">Business & First Class</a>
+                    <a href="#" class="footer-link">Group Travel</a>
+                    <a href="#" class="footer-link">Airlines</a>
+                    <a href="#" class="footer-link">About Us</a>
+                    <a href="contact.html" class="footer-link">Contact Us</a>
+                    <a href="#" class="footer-link">Privacy Policy</a>
+                    <a href="#" class="footer-link">Terms of Use</a>
+                    <a href="#" class="footer-link">Customer Reviews</a>
+                    <a href="#" class="footer-link">Blog</a>
                 </div>
-                
-                <div class="col-lg-3 col-md-6 col-6">
-                    <h5 class="f-title">Support</h5>
-                    <a href="#" class="f-link">FAQ</a>
-                    <a href="#" class="f-link">Privacy Policy</a>
-                    <a href="#" class="f-link">Terms</a>
+
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="footer-title">Flights To</h5>
+                    <a href="usa.html" class="footer-link">USA</a>
+                    <a href="canada.html" class="footer-link">Canada</a>
+                    <a href="australia.html" class="footer-link">Australia</a>
+                    <a href="new-zealand.html" class="footer-link">New Zealand</a>
+                    <a href="middle-east.html" class="footer-link">Middle East</a>
+                    <a href="africa.html" class="footer-link">Africa</a>
+                    <a href="far-east.html" class="footer-link">Far East</a>
+                    <a href="latin-america.html" class="footer-link">Latin America</a>
+                    <a href="europe.html" class="footer-link">Europe</a>
                 </div>
-                
-                <div class="col-lg-3 col-md-6 col-6">
-                    <h5 class="f-title">Social</h5>
-                    <a href="#" class="f-link"><i class="fab fa-instagram me-2"></i> Instagram</a>
-                    <a href="#" class="f-link"><i class="fab fa-linkedin me-2"></i> LinkedIn</a>
-                    <a href="#" class="f-link"><i class="fab fa-twitter me-2"></i> Twitter</a>
+
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="footer-title">Top Destinations <span class="badge bg-danger ms-1">NEW</span></h5>
+                    <a href="#" class="footer-link">Africa & S.Africa</a>
+                    <a href="#" class="footer-link">Australia & New Zealand</a>
+                    <a href="canada.html" class="footer-link">Canada</a>
+                    <a href="#" class="footer-link">Jamaica & Caribbean</a>
+                    <a href="#" class="footer-link">New York</a>
+                    <a href="#" class="footer-link">Orlando</a>
+                    <a href="#" class="footer-link">Portugal</a>
+                </div>
+
+                <div class="col-lg-3 col-md-12">
+                    <h5 class="footer-title">Holiday Types</h5>
+                    <a href="#" class="footer-link">All Inclusive</a>
+                    <a href="#" class="footer-link">City Breaks</a>
+                    <a href="#" class="footer-link">Honeymoons</a>
+                    <a href="#" class="footer-link">Luxury & Beach</a>
                 </div>
             </div>
-            
+
             <div class="footer-bottom">
-                <div class="text-center">
-                    <p class="mb-0 text-muted small">&copy; 2026 Roamerly. All Rights Reserved.</p>
+                <hr class="border-secondary mb-4">
+                <div class="d-flex justify-content-between flex-wrap">
+                    <p class="mb-0">&copy; 2026 Roamerly.co.uk | All Rights Reserved.</p>
+                    <p class="mb-0">Terms & Conditions | Privacy Policy</p>
                 </div>
             </div>
         </div>
     </footer>
 
-    <!-- AI Floating Badge -->
-    <a href="#" class="position-fixed" style="bottom: 30px; right: 30px; z-index: 999; animation: floatBlob 3s infinite alternate;">
-        <div style="background: linear-gradient(135deg, var(--primary-blue), #A855F7); width: 60px; height: 60px; border-radius: 50%; display: flex; justify-content: center; align-items: center; box-shadow: 0 10px 30px rgba(168,85,247,0.4); border: 2px solid rgba(255,255,255,0.5);">
-            <i class="fas fa-sparkles fs-4 text-white"></i>
-        </div>
+    <!-- Floating Buttons -->
+    <a href="https://wa.me/917015638389" target="_blank" class="floating-btn whatsapp-btn">
+        <i class="fab fa-whatsapp"></i>
     </a>
+    <button id="back-top-btn" class="floating-btn back-top-btn">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Schedule Callback Toggle Button -->
+    <div id="callback-toggle-btn" class="callback-toggle-btn">
+        <i class="fas fa-phone-volume fa-shake"></i> Call & Get Free Quote Now!
+    </div>
+
+    <!-- Schedule Callback Widget -->
+    <div id="callback-widget" class="callback-widget">
+        <i class="fas fa-times widget-close" id="callback-close"></i>
+        <h5 class="mb-2 text-gradient"><i class="fas fa-headset me-2"></i>Schedule Callback</h5>
+        <p class="small text-muted mb-3">Apologies, we are currently out of hours. Can we call you back? Enter your
+            number below and let us know when is best for you.</p>
+        <div class="input-group mb-3">
+            <span class="input-group-text bg-transparent border-end-0 border-secondary">+91</span>
+            <input type="text" class="form-control border-start-0 ps-0" placeholder="Enter your number">
+        </div>
+        <button class="btn-luxury w-100 py-2 fs-6">Schedule Callback</button>
+        <p class="small text-center text-muted mt-3 mb-0">Powered by ResponseiQ</p>
+    </div>
+
+    <!-- AI Chatbot Toggle -->
+    <div id="chatbot-toggle-btn" class="chatbot-toggle-btn">
+        <i class="fas fa-robot"></i>
+    </div>
+
+    <!-- AI Chatbot Widget -->
+    <div id="chatbot-widget" class="chatbot-widget">
+        <div class="chatbot-header">
+            <span><i class="fas fa-robot me-2"></i> Roamerly AI</span>
+            <i class="fas fa-times" id="chatbot-close" style="cursor:pointer;"></i>
+        </div>
+        <div class="chatbot-body">
+            <div class="chat-msg bot">
+                Hello! I am your Roamerly AI assistant. How can I help you plan your perfect trip today?
+            </div>
+        </div>
+        <div class="chatbot-footer">
+            <input type="text" class="chatbot-input" placeholder="Type a message...">
+            <button class="chatbot-send"><i class="fas fa-paper-plane"></i></button>
+        </div>
+    </div>
 
     <!-- JS Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
