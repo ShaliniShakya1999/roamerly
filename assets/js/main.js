@@ -48,6 +48,37 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+    // Navbar dropdown — hover open + smooth submenu (desktop)
+    const navDropdowns = document.querySelectorAll('.navbar .dropdown');
+    const desktopNavMq = window.matchMedia('(min-width: 992px)');
+
+    if (navDropdowns.length && typeof bootstrap !== 'undefined') {
+        navDropdowns.forEach((dropdown) => {
+            const toggle = dropdown.querySelector('[data-bs-toggle="dropdown"]');
+            if (!toggle) return;
+
+            const instance = bootstrap.Dropdown.getOrCreateInstance(toggle);
+
+            dropdown.addEventListener('mouseenter', () => {
+                if (!desktopNavMq.matches) return;
+                navDropdowns.forEach((other) => {
+                    if (other === dropdown) return;
+                    const otherToggle = other.querySelector('[data-bs-toggle="dropdown"]');
+                    const otherInstance = otherToggle
+                        ? bootstrap.Dropdown.getInstance(otherToggle)
+                        : null;
+                    otherInstance?.hide();
+                });
+                instance.show();
+            });
+
+            dropdown.addEventListener('mouseleave', () => {
+                if (!desktopNavMq.matches) return;
+                instance.hide();
+            });
+        });
+    }
+
     // Back to Top Button
     const backTopBtn = document.getElementById('back-top-btn');
     window.addEventListener('scroll', () => {

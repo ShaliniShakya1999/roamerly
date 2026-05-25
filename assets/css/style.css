@@ -224,6 +224,54 @@ img { max-width: 100%; height: auto; }
 .pkg-features li { margin-bottom: 10px; font-size: 14px; color: var(--text-muted); display: flex; align-items: center; gap: 10px; }
 .pkg-features li i { color: #10B981; }
 
+/* Package Card Image Wrapper (used in destination pages) */
+.package-card { overflow: hidden; }
+.package-card-img-wrap {
+    position: relative;
+    height: 280px;
+    overflow: hidden;
+}
+.package-card-img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.package-card-img-wrap:hover img {
+    transform: scale(1.06);
+}
+.package-badge {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background: rgba(255, 255, 255, 0.95);
+    color: var(--text-dark);
+    font-size: 12px;
+    font-weight: 700;
+    padding: 6px 14px;
+    border-radius: 30px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+/* Place Card (used in destination pages) */
+.place-card { border-radius: 20px; transition: var(--transition); }
+.place-card:hover { transform: translateY(-5px); box-shadow: var(--float-shadow); }
+.place-card-img {
+    height: 200px;
+    overflow: hidden;
+}
+.place-card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+.place-card:hover .place-card-img img {
+    transform: scale(1.06);
+}
+
 /* Testimonials */
 .testi-card { padding: 40px; text-align: center; }
 .testi-avatar { width: 80px; height: 80px; border-radius: 50%; margin: 0 auto 20px; border: 4px solid #fff; box-shadow: 0 10px 20px rgba(0,0,0,0.05); }
@@ -1001,6 +1049,206 @@ html[data-theme="dark"] .navbar-toggler i {
     color: #fff !important;
 }
 
+/* ----------------------------------------------------
+   NAVBAR MENU & SUBMENU ANIMATIONS (hover)
+   ---------------------------------------------------- */
+.navbar .nav-item {
+    position: relative;
+}
+
+.navbar .nav-link {
+    position: relative;
+    transition: color 0.3s ease, transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.navbar .nav-link:hover {
+    transform: translateY(-2px);
+}
+
+.navbar .dropdown-toggle::after {
+    transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    vertical-align: 0.15em;
+}
+
+.navbar .dropdown.show > .dropdown-toggle::after,
+.navbar .dropdown:hover > .dropdown-toggle::after {
+    transform: rotate(180deg);
+}
+
+/* Dropdown panel — open animation */
+.navbar .dropdown-menu.glass-card {
+    display: block;
+    pointer-events: none;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(14px) scale(0.96);
+    transform-origin: top center;
+    transition:
+        opacity 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+        transform 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+        visibility 0.35s;
+    border: 1px solid rgba(255, 255, 255, 0.65);
+    border-radius: 16px;
+    padding: 0.5rem;
+    min-width: 220px;
+    background: rgba(255, 255, 255, 0.92) !important;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    box-shadow: 0 20px 50px -12px rgba(15, 23, 42, 0.2);
+    margin-top: 0.5rem !important;
+}
+
+.navbar .dropdown-menu.show {
+    pointer-events: auto;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0) scale(1);
+    animation: navDropdownPop 0.45s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes navDropdownPop {
+    0% {
+        opacity: 0;
+        transform: translateY(14px) scale(0.96);
+    }
+    70% {
+        transform: translateY(-2px) scale(1.01);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* Submenu items — stagger + hover slide */
+.navbar .dropdown-menu .dropdown-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 3px 6px;
+    padding: 0.55rem 1rem 0.55rem 1.35rem;
+    font-weight: 500;
+    transition:
+        color 0.25s ease,
+        background 0.3s ease,
+        transform 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+        padding-left 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.navbar .dropdown-menu .dropdown-item::before {
+    content: '';
+    position: absolute;
+    left: 0.5rem;
+    top: 50%;
+    width: 4px;
+    height: 0;
+    border-radius: 4px;
+    background: linear-gradient(180deg, var(--primary-blue), var(--accent-orange));
+    transform: translateY(-50%);
+    transition: height 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.navbar .dropdown-menu.show .dropdown-item {
+    animation: navMenuItemIn 0.4s cubic-bezier(0.16, 1, 0.3, 1) backwards;
+}
+
+.navbar .dropdown-menu.show .dropdown-item:nth-child(1) { animation-delay: 0.04s; }
+.navbar .dropdown-menu.show .dropdown-item:nth-child(2) { animation-delay: 0.07s; }
+.navbar .dropdown-menu.show .dropdown-item:nth-child(3) { animation-delay: 0.10s; }
+.navbar .dropdown-menu.show .dropdown-item:nth-child(4) { animation-delay: 0.13s; }
+.navbar .dropdown-menu.show .dropdown-item:nth-child(5) { animation-delay: 0.16s; }
+.navbar .dropdown-menu.show .dropdown-item:nth-child(6) { animation-delay: 0.19s; }
+.navbar .dropdown-menu.show .dropdown-item:nth-child(7) { animation-delay: 0.22s; }
+.navbar .dropdown-menu.show .dropdown-item:nth-child(8) { animation-delay: 0.25s; }
+.navbar .dropdown-menu.show .dropdown-item:nth-child(9) { animation-delay: 0.28s; }
+.navbar .dropdown-menu.show .dropdown-item:nth-child(10) { animation-delay: 0.31s; }
+.navbar .dropdown-menu.show .dropdown-item:nth-child(11) { animation-delay: 0.34s; }
+.navbar .dropdown-menu.show .dropdown-item:nth-child(12) { animation-delay: 0.37s; }
+.navbar .dropdown-menu.show .dropdown-item:nth-child(n+13) { animation-delay: 0.4s; }
+
+@keyframes navMenuItemIn {
+    from {
+        opacity: 0;
+        transform: translateX(-12px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.navbar .dropdown-menu .dropdown-item:hover,
+.navbar .dropdown-menu .dropdown-item:focus {
+    color: var(--primary-blue) !important;
+    background: linear-gradient(90deg, rgba(20, 184, 166, 0.14), rgba(249, 115, 22, 0.08)) !important;
+    transform: translateX(6px);
+    padding-left: 1.65rem;
+    box-shadow: 0 4px 14px -4px rgba(20, 184, 166, 0.35);
+}
+
+.navbar .dropdown-menu .dropdown-item:hover::before,
+.navbar .dropdown-menu .dropdown-item:focus::before {
+    height: 65%;
+}
+
+.navbar .dropdown-menu .dropdown-item:active {
+    transform: translateX(4px) scale(0.98);
+}
+
+/* Domestic vs International subtle hover tint */
+.navbar .nav-item:nth-child(3) .dropdown-menu .dropdown-item:hover {
+    background: linear-gradient(90deg, rgba(20, 184, 166, 0.16), rgba(20, 184, 166, 0.05)) !important;
+}
+
+.navbar .nav-item:nth-child(2) .dropdown-menu .dropdown-item:hover {
+    background: linear-gradient(90deg, rgba(249, 115, 22, 0.14), rgba(249, 115, 22, 0.05)) !important;
+}
+
+html[data-theme="dark"] .navbar .dropdown-menu.glass-card {
+    background: rgba(15, 23, 42, 0.95) !important;
+    border-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 20px 50px -12px rgba(0, 0, 0, 0.5);
+}
+
+html[data-theme="dark"] .navbar .dropdown-menu .dropdown-item {
+    color: rgba(248, 250, 252, 0.9) !important;
+}
+
+html[data-theme="dark"] .navbar .dropdown-menu .dropdown-item:hover {
+    color: var(--primary-blue) !important;
+}
+
+/* Plan My Trip + search hover */
+.navbar .btn-nav-highlight {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.navbar .btn-nav-highlight:hover {
+    transform: translateY(-2px) scale(1.03);
+}
+
+@media (max-width: 991.98px) {
+    .navbar .nav-link:hover {
+        transform: none;
+    }
+    .navbar .dropdown-menu.glass-card {
+        transform: none;
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+        box-shadow: none;
+        background: transparent !important;
+        border: none;
+        padding-left: 1rem;
+    }
+    .navbar .dropdown-menu.show {
+        animation: none;
+    }
+    .navbar .dropdown-menu.show .dropdown-item {
+        animation: none;
+    }
+}
+
 /* Fullscreen Search Overlay */
 .search-overlay {
     position: fixed;
@@ -1193,4 +1441,157 @@ footer {
 }
 .footer-bottom a:hover {
     color: var(--primary-blue) !important;
+}
+
+/* Destinations mega dropdown — India left, International right */
+.dropdown-menu.destinations-mega {
+    min-width: min(560px, 95vw);
+    border-radius: 16px;
+    overflow: hidden;
+}
+.destinations-mega-wrap {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.destinations-mega-col {
+    padding: 0.65rem 0.35rem 0.75rem;
+    max-height: 70vh;
+    overflow-y: auto;
+}
+.destinations-mega-india {
+    background: rgba(20, 184, 166, 0.06);
+}
+.destinations-mega-intl {
+    background: rgba(249, 115, 22, 0.06);
+    border-left: 1px solid rgba(15, 23, 42, 0.08);
+}
+@media (max-width: 767.98px) {
+    .destinations-mega-intl {
+        border-left: none;
+        border-top: 1px solid rgba(15, 23, 42, 0.08);
+    }
+}
+.dropdown-menu.destinations-mega .dropdown-header {
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--primary-blue);
+    font-weight: 700;
+    padding-top: 0.5rem;
+}
+.destinations-mega-intl .dropdown-header {
+    color: var(--accent-orange);
+}
+.dropdown-menu.destinations-mega .dropdown-item {
+    white-space: normal;
+    padding: 0.45rem 0.85rem;
+    border-radius: 8px;
+}
+.dropdown-menu.destinations-mega .dropdown-item strong {
+    font-weight: 600;
+}
+.dropdown-menu.destinations-mega .dropdown-item small {
+    font-size: 0.75rem;
+}
+
+/* ----------------------------------------------------
+   DESTINATION PAGES — hero, cards, animations
+   ---------------------------------------------------- */
+.destination-hero {
+    position: relative;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+.destination-hero-bg {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    animation: heroKenBurns 18s ease-in-out infinite alternate;
+    transform: scale(1.05);
+}
+@keyframes heroKenBurns {
+    0% { transform: scale(1.05) translate(0, 0); }
+    100% { transform: scale(1.12) translate(-1%, -1%); }
+}
+.destination-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(15, 23, 42, 0.45) 0%, rgba(15, 23, 42, 0.75) 100%);
+}
+.destination-hero-content {
+    z-index: 2;
+    padding: 6rem 0 4rem;
+}
+.destination-hero-badge {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.95);
+    color: var(--dark-slate);
+    padding: 0.5rem 1.25rem;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    margin-bottom: 1rem;
+    animation: badgePulse 2.5s ease-in-out infinite;
+}
+@keyframes badgePulse {
+    0%, 100% { box-shadow: 0 0 0 0 rgba(20, 184, 166, 0.4); }
+    50% { box-shadow: 0 0 0 12px rgba(20, 184, 166, 0); }
+}
+.destination-intro-card {
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+.destination-intro-card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--float-shadow);
+}
+.place-card {
+    transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.45s ease;
+}
+.place-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--float-shadow);
+}
+.place-card-img {
+    height: 200px;
+    overflow: hidden;
+}
+.place-card-img img {
+    transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.place-card:hover .place-card-img img {
+    transform: scale(1.08);
+}
+.package-card-img-wrap {
+    height: 280px;
+    overflow: hidden;
+}
+.package-card-img-wrap img {
+    transition: transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.package-card:hover .package-card-img-wrap img {
+    transform: scale(1.06);
+}
+.package-badge {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    background: #fff;
+    color: var(--dark-slate);
+    font-size: 0.8rem;
+    font-weight: 700;
+    padding: 0.4rem 1rem;
+    border-radius: 50px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+.trust-stat-item,
+.glass-panel-hover {
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+.trust-stat-item:hover {
+    transform: translateY(-4px);
 }

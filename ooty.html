@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ooty Hotels & Tour Packages | Roamerly</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Book hotels and tour packages in Ooty with Roamerly. 1,427+ accommodations at unbeatable prices with luxury inclusions.">
+    <meta name="keywords"
+        content="ooty tour packages, domestic holidays, goa packages, manali holiday, kashmir trip, nainital packages, jaipur royal tour, india tourism, roamerly">
+
+    <!-- Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS Libraries -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <i class="fas fa-plane loader-plane"></i>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/images/logo.png" alt="Roamerly Logo"
+                    style="height: 100px; margin-top: -15px; margin-bottom: -15px;">
+            </a>
+
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <i class="fas fa-bars fs-3" style="color: #fff;"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+
+                    <!-- International Tours Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown">International Tours</a>
+                        <ul class="dropdown-menu glass-card">
+                            <li><a class="dropdown-item" href="usa.html">USA</a></li>
+                            <li><a class="dropdown-item" href="canada.html">Canada</a></li>
+                            <li><a class="dropdown-item" href="australia.html">Australia</a></li>
+                            <li><a class="dropdown-item" href="new-zealand.html">New Zealand</a></li>
+                            <li><a class="dropdown-item" href="middle-east.html">Middle East</a></li>
+                            <li><a class="dropdown-item" href="africa.html">Africa</a></li>
+                            <li><a class="dropdown-item" href="far-east.html">Far East</a></li>
+                            <li><a class="dropdown-item" href="latin-america.html">Latin America</a></li>
+                            <li><a class="dropdown-item" href="caribbean.html">Caribbean</a></li>
+                            <li><a class="dropdown-item" href="asia.html">Asia</a></li>
+                            <li><a class="dropdown-item" href="mexico.html">Mexico</a></li>
+                            <li><a class="dropdown-item" href="europe.html">Europe</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Domestic Tours Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Domestic
+                            Tours</a>
+                        <ul class="dropdown-menu glass-card">
+                            <li><a class="dropdown-item" href="bangalore.html">Bangalore</a></li>
+                            <li><a class="dropdown-item" href="mumbai.html">Mumbai</a></li>
+                            <li><a class="dropdown-item" href="new-delhi.html">New Delhi</a></li>
+                            <li><a class="dropdown-item" href="goa.html">Goa</a></li>
+                            <li><a class="dropdown-item" href="hyderabad.html">Hyderabad</a></li>
+                            <li><a class="dropdown-item" href="chennai.html">Chennai</a></li>
+                            <li><a class="dropdown-item" href="jaipur.html">Jaipur</a></li>
+                            <li><a class="dropdown-item" href="kolkata.html">Kolkata</a></li>
+                            <li><a class="dropdown-item" href="kochi.html">Kochi</a></li>
+                            <li><a class="dropdown-item" href="pune.html">Pune</a></li>
+                            <li><a class="dropdown-item" href="varanasi.html">Varanasi</a></li>
+                            <li><a class="dropdown-item" href="pondicherry.html">Pondicherry</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item"><a class="nav-link" href="contact.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+                <div class="d-flex align-items-center mt-3 mt-lg-0">
+
+                    <!-- Search Icon Button -->
+                    <button class="nav-search-btn me-3" id="navbarSearchBtn"><i class="fas fa-search"></i></button>
+                    <a href="contact.html" class="btn-nav-highlight"><i class="fas fa-paper-plane me-1"></i> Plan My
+                        Trip</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Hero Section -->
+    <section class="hero-slider"
+        style="height: 65vh; position: relative; background: url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;">
+        <div style="position: absolute; top:0; left:0; width:100%; height:100%; background: rgba(0,0,0,0.5);"></div>
+        <div class="container h-100 d-flex flex-column justify-content-center align-items-center position-relative text-center text-white"
+            style="z-index: 2;">
+            <span class="badge bg-light text-dark px-3 py-2 rounded-pill fw-bold mb-3 shadow-sm gsap-fade-up">EXPLORE
+                OOTY</span>
+            <h1 class="display-3 fw-bold gsap-fade-up"
+                style="letter-spacing: -1px; text-shadow: 0 4px 10px rgba(0,0,0,0.5);">Discover Ooty</h1>
+            <p class="lead max-width-600 gsap-fade-up text-light opacity-90"
+                style="max-width: 650px; text-shadow: 0 2px 5px rgba(0,0,0,0.5);">Find the best stays and curated
+                holiday packages in Ooty. 1,427 accommodations available.</p>
+            <div class="mt-4 gsap-fade-up">
+                <a href="#packages-list" class="btn-primary-glow"><i class="fas fa-map-marked-alt me-2"></i> Explore
+                    Packages</a>
+                <a href="contact.html" class="btn-glass ms-3"><i class="fas fa-paper-plane me-2"></i> Custom Enquiry</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Packages Detailed Grid -->
+    <section id="packages-list" class="py-5" style="background: rgba(255,255,255,0.2);">
+        <div class="container py-5">
+            <div class="section-header text-center mb-5 gsap-fade-up">
+                <span class="section-tag">Explore Ooty</span>
+                <h2 class="section-title">Ooty Holiday Packages</h2>
+                <p class="section-desc">We offer budget-friendly and premium customized packages. Handpicked inclusions
+                    for maximum comfort.</p>
+            </div>
+
+            <div class="row g-5 justify-content-center">
+                <!-- Goa Package -->
+                <div class="col-lg-6 gsap-stagger-item">
+                    <div class="glass-panel glass-panel-hover overflow-hidden h-100 d-flex flex-column shadow-sm">
+                        <div class="position-relative" style="height: 300px; overflow: hidden;">
+                            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80"
+                                alt="Goa" class="w-100 h-100 object-fit-cover">
+                            <span
+                                class="position-absolute top-0 start-0 m-3 px-3 py-2 rounded-pill text-white fw-bold shadow"
+                                style="font-size: 12px; background: linear-gradient(135deg, #06B6D4, #3B82F6);">🌴
+                                Luxury Retreat</span>
+                            <span
+                                class="position-absolute bottom-0 end-0 m-3 px-3 py-2 rounded-pill bg-white text-dark fw-bold shadow"
+                                style="font-size: 13px;">4 Days / 3 Nights</span>
+                        </div>
+                        <div class="p-5 d-flex flex-column flex-grow-1">
+                            <h3 class="fw-bold mb-3 text-dark">Goa Luxury Retreat (Premium Beachfront Suite + Private
+                                Yacht)</h3>
+                            <p class="text-muted mb-4">Experience Goa in ultimate style with beachfront resort lodging,
+                                a private sunset yacht cruise, and premium local transport. Perfect for discerning
+                                travelers looking for luxury.</p>
+
+                            <h5 class="fw-semibold mb-3 text-primary-blue">What's Included:</h5>
+                            <div class="row g-2 mb-4">
+                                <div class="col-sm-6 small text-muted"><i
+                                        class="fas fa-check text-success me-2"></i>5-Star Beachfront Resort Stay</div>
+                                <div class="col-sm-6 small text-muted"><i
+                                        class="fas fa-check text-success me-2"></i>Daily Premium Buffet Breakfast &
+                                    Dinner</div>
+                                <div class="col-sm-6 small text-muted"><i
+                                        class="fas fa-check text-success me-2"></i>Private Luxury SUV Tour (North &
+                                    South Goa)</div>
+                                <div class="col-sm-6 small text-muted"><i
+                                        class="fas fa-check text-success me-2"></i>Private Mercedes/SUV Airport
+                                    Transfers</div>
+                                <div class="col-sm-6 small text-muted"><i
+                                        class="fas fa-check text-success me-2"></i>Complimentary Champagne Welcome Drink
+                                </div>
+                                <div class="col-sm-6 small text-muted"><i
+                                        class="fas fa-check text-success me-2"></i>Dedicated 24/7 Concierge Service
+                                </div>
+                            </div>
+
+                            <div class="d-flex justify-content-between align-items-center mt-auto pt-4 border-top">
+                                <div>
+                                    <span class="text-muted d-block small">Premium Luxury</span>
+                                    <span class="fs-3 fw-extrabold text-dark">₹24,999</span> <small class="text-muted">/
+                                        person</small>
+                                </div>
+                                <div>
+                                    <a href="https://wa.me/917015638389?text=I%20want%20to%20book%20the%20Goa%20Luxury%20Beach%20Retreat"
+                                        target="_blank" class="btn-primary-glow px-4 py-3"><i
+                                            class="fab fa-whatsapp me-2"></i> Book on WhatsApp</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Manali Package -->
+                <div class="col-lg-6 gsap-stagger-item">
+                    <div class="glass-panel glass-panel-hover overflow-hidden h-100 d-flex flex-column shadow-sm">
+                        <div class="position-relative" style="height: 300px; overflow: hidden;">
+                            <img src="https://images.unsplash.com/photo-1605649487212-47bdab064df7?auto=format&fit=crop&w=800&q=80"
+                                alt="Manali" class="w-100 h-100 object-fit-cover">
+                            <span
+                                class="position-absolute top-0 start-0 m-3 px-3 py-2 rounded-pill text-white fw-bold shadow"
+                                style="font-size: 12px; background: linear-gradient(135deg, #3B82F6, #6366F1);">🏔
+                                Mountain Chalet</span>
+                            <span
+                                class="position-absolute bottom-0 end-0 m-3 px-3 py-2 rounded-pill bg-white text-dark fw-bold shadow"
+                                style="font-size: 13px;">5 Days / 4 Nights</span>
+                        </div>
+                        <div class="p-5 d-flex flex-column flex-grow-1">
+                            <h3 class="fw-bold mb-3 text-dark">Manali Premium Chalet (Glass Roof Cottage + Private SUV)
+                            </h3>
+                            <p class="text-muted mb-4">Immerse yourself in the majesty of the Himalayas. Stay in a
+                                luxury glass-roof cottage with panoramic mountain views, enjoy premium private
+                                transfers, and indulge in gourmet mountain meals.</p>
+
+                            <h5 class="fw-semibold mb-3 text-primary-blue">What's Included:</h5>
+                            <div class="row g-2 mb-4">
+                                <div class="col-sm-6 small text-muted"><i
+                                        class="fas fa-check text-success me-2"></i>Private SUV Transfers
+                                    (Delhi/Chandigarh to Manali)</div>
+                                <div class="col-sm-6 small text-muted"><i
+                                        class="fas fa-check text-success me-2"></i>Luxury Glass-Roof Chalet Stay</div>
+                                <div class="col-sm-6 small text-muted"><i
+                                        class="fas fa-check text-success me-2"></i>Private Solang & Rohtang Pass SUV
+                                    Tour</div>
+                                <div class="col-sm-6 small text-muted"><i
+                                        class="fas fa-check-circle text-success me-2"></i>Private Bonfire with Live
+                                    Acoustic Music</div>
+                                <div class="col-sm-6 small text-muted"><i
+                                        class="fas fa-check-circle text-success me-2"></i>Daily Gourmet Breakfast &
+                                    Dinner Buffet</div>
+                                <div class="col-sm-6 small text-muted"><i
+                                        class="fas fa-check-circle text-success me-2"></i>Dedicated Local Chauffeur
+                                    Service</div>
+                            </div>
+
+                            <div class="d-flex justify-content-between align-items-center mt-auto pt-4 border-top">
+                                <div>
+                                    <span class="text-muted d-block small">Premium Luxury</span>
+                                    <span class="fs-3 fw-extrabold text-dark">₹29,999</span> <small class="text-muted">/
+                                        person</small>
+                                </div>
+                                <div>
+                                    <a href="https://wa.me/917015638389?text=I%20want%20to%20book%20the%20Manali%20Premium%20Glass%20Chalet"
+                                        target="_blank" class="btn-primary-glow px-4 py-3"><i
+                                            class="fab fa-whatsapp me-2"></i> Book on WhatsApp</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kashmir Package -->
+                <div class="col-lg-6 gsap-stagger-item">
+                    <div class="glass-panel glass-panel-hover overflow-hidden h-100 d-flex flex-column shadow-sm">
+                        <div class="position-relative" style="height: 300px; overflow: hidden;">
+                            <img src="https://images.unsplash.com/photo-1598302842278-40e1e6988891?auto=format&fit=crop&w=800&q=80"
+                                alt="Kashmir" class="w-100 h-100 object-fit-cover">
+                            <span
+                                class="position-absolute top-0 start-0 m-3 px-3 py-2 rounded-pill text-white fw-bold shadow"
+                                style="font-size: 12px; background: linear-gradient(135deg, #EC4899, #8B5CF6);">❄ Royal
+                                Escape</span>
+                            <span
+                                class="position-absolute bottom-0 end-0 m-3 px-3 py-2 rounded-pill bg-white text-dark fw-bold shadow"
+                                style="font-size: 13px;">6 Days / 5 Nights</span>
+                        </div>
+                        <div class="p-5 d-flex flex-column flex-grow-1">
+                            <h3 class="fw-bold mb-3 text-dark">Kashmir Royal Escape (Luxury Houseboat + 5-Star Srinagar
+                                Resort)</h3>
+                            <p class="text-muted mb-4">Experience the crown jewel of India in complete opulence. Enjoy
+                                luxury houseboat stays, premium 5-star mountain resorts, private Shikara rides with
+                                customized dining, and dedicated SUV travel.</p>
+
+                            <h5 class="fw-semibold mb-3 text-primary-blue">What's Included:</h5>
+                            <div class="row g-2 mb-4">
+                                <div class="col-sm-6 small text-muted"><i class="fas fa-check text-success me-2"></i>1
+                                    Night Ultra-Luxury Houseboat Stay (Dal Lake)</div>
+                                <div class="col-sm-6 small text-muted"><i class="fas fa-check text-success me-2"></i>4
+                                    Nights 5-Star Luxury Srinagar & Gulmarg Resorts</div>
+                                <div class="col-sm-6 small text-muted"><i class="fas fa-check text-success me-2"></i>VIP
+                                    Gondola Ticket Booking & Ski Guide Assistance</div>
+                                <div class="col-sm-6 small text-muted"><i
+                                        class="fas fa-check-circle text-success me-2"></i>Gourmet Breakfast & Dinner
+                                    Buffet Daily</div>
+                                <div class="col-sm-6 small text-muted"><i
+                                        class="fas fa-check-circle text-success me-2"></i>Private Luxury SUV (Innova
+                                    Crysta) for All Transfers</div>
+                                <div class="col-sm-6 small text-muted"><i
+                                        class="fas fa-check-circle text-success me-2"></i>Private Shikara Ride with
+                                    Refreshments (1 Hr)</div>
+                            </div>
+
+                            <div class="d-flex justify-content-between align-items-center mt-auto pt-4 border-top">
+                                <div>
+                                    <span class="text-muted d-block small">Premium Luxury</span>
+                                    <span class="fs-3 fw-extrabold text-dark">₹39,999</span> <small class="text-muted">/
+                                        person</small>
+                                </div>
+                                <div>
+                                    <a href="https://wa.me/917015638389?text=I%20want%20to%20book%20the%20Kashmir%20Royal%20Escape"
+                                        target="_blank" class="btn-primary-glow px-4 py-3"><i
+                                            class="fab fa-whatsapp me-2"></i> Book on WhatsApp</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Nainital Package -->
+                <div class="col-lg-6 gsap-stagger-item">
+                    <div class="glass-panel glass-panel-hover overflow-hidden h-100 d-flex flex-column shadow-sm">
+                        <div class="position-relative" style="height: 300px; overflow: hidden;">
+                            <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=800&q=80"
+                                alt="Nainital" class="w-100 h-100 object-fit-cover">
+                            <span
+                                class="position-absolute top-0 start-0 m-3 px-3 py-2 rounded-pill text-white fw-bold shadow"
+                                style="font-size: 12px; background: linear-gradient(135deg, #10B981, #059669);">🌊
+                                Lakeside Chalet</span>
+                            <span
+                                class="position-absolute bottom-0 end-0 m-3 px-3 py-2 rounded-pill bg-white text-dark fw-bold shadow"
+                                style="font-size: 13px;">3 Days / 2 Nights</span>
+                        </div>
+                        <div class="p-5 d-flex flex-column flex-grow-1">
+                            <h3 class="fw-bold mb-3 text-dark">Nainital Lakeside Serenity (Premium Lake-Facing Suite)
+                            </h3>
+                            <p class="text-muted mb-4">Breathe in the fresh mountain air of Nainital. Stay in a premium
+                                lake-facing suite, enjoy a private yacht experience on Naini Lake, and customized
+                                sightseeing via private luxury transport.</p>
+
+                            <h5 class="fw-semibold mb-3 text-primary-blue">What's Included:</h5>
+                            <div class="row g-2 mb-4">
+                                <div class="col-sm-6 small text-muted"><i
+                                        class="fas fa-check text-success me-2"></i>5-Star Lakefront Resort Stay</div>
+                                <div class="col-sm-6 small text-muted"><i
+                                        class="fas fa-check text-success me-2"></i>Private Yacht Boating on Naini Lake
+                                </div>
+                                <div class="col-sm-6 small text-muted"><i
+                                        class="fas fa-check text-success me-2"></i>Private Luxury SUV Local Tour</div>
+                                <div class="col-sm-6 small text-muted"><i
+                                        class="fas fa-check-circle text-success me-2"></i>Daily Gourmet Breakfast &
+                                    Dinner</div>
+                                <div class="col-sm-6 small text-muted"><i
+                                        class="fas fa-check-circle text-success me-2"></i>Private AC Sedan Station
+                                    Transfers</div>
+                                <div class="col-sm-6 small text-muted"><i
+                                        class="fas fa-check-circle text-success me-2"></i>Dedicated Travel Assistant &
+                                    Guide</div>
+                            </div>
+
+                            <div class="d-flex justify-content-between align-items-center mt-auto pt-4 border-top">
+                                <div>
+                                    <span class="text-muted d-block small">Premium Luxury</span>
+                                    <span class="fs-3 fw-extrabold text-dark">₹19,999</span> <span class="text-muted">/
+                                        person</span>
+                                </div>
+                                <div>
+                                    <a href="https://wa.me/917015638389?text=I%20want%20to%20book%20the%20Nainital%20Lakeside%20Serenity"
+                                        target="_blank" class="btn-primary-glow px-4 py-3"><i
+                                            class="fab fa-whatsapp me-2"></i> Book on WhatsApp</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Jaipur Package -->
+                <div class="col-lg-6 gsap-stagger-item">
+                    <div class="glass-panel glass-panel-hover overflow-hidden h-100 d-flex flex-column shadow-sm">
+                        <div class="position-relative" style="height: 300px; overflow: hidden;">
+                            <img src="https://images.unsplash.com/photo-1599661046289-e31897846e41?auto=format&fit=crop&w=800&q=80"
+                                alt="Jaipur" class="w-100 h-100 object-fit-cover">
+                            <span
+                                class="position-absolute top-0 start-0 m-3 px-3 py-2 rounded-pill text-white fw-bold shadow"
+                                style="font-size: 12px; background: linear-gradient(135deg, #F59E0B, #D97706);">🏰 Royal
+                                Palace</span>
+                            <span
+                                class="position-absolute bottom-0 end-0 m-3 px-3 py-2 rounded-pill bg-white text-dark fw-bold shadow"
+                                style="font-size: 13px;">3 Days / 2 Nights</span>
+                        </div>
+                        <div class="p-5 d-flex flex-column flex-grow-1">
+                            <h3 class="fw-bold mb-3 text-dark">Jaipur Royal Heritage Tour (Heritage Palace Suite Stay)
+                            </h3>
+                            <p class="text-muted mb-4">Live like royalty in the Pink City. Enjoy palace suite
+                                accommodations, a private certified historian guide, VIP entry to majestic forts, and an
+                                exclusive royal dining experience.</p>
+
+                            <h5 class="fw-semibold mb-3 text-primary-blue">What's Included:</h5>
+                            <div class="row g-2 mb-4">
+                                <div class="col-sm-6 small text-muted"><i class="fas fa-check text-success me-2"></i>VIP
+                                    Fast-Track Entry to All Palaces & Forts</div>
+                                <div class="col-sm-6 small text-muted"><i
+                                        class="fas fa-check text-success me-2"></i>Royal Palace Heritage Suite Stay
+                                </div>
+                                <div class="col-sm-6 small text-muted"><i
+                                        class="fas fa-check text-success me-2"></i>Private Certified Historian Guide
+                                </div>
+                                <div class="col-sm-6 small text-muted"><i
+                                        class="fas fa-check-circle text-success me-2"></i>Daily Royal Breakfast &
+                                    Gourmet Dinner</div>
+                                <div class="col-sm-6 small text-muted"><i
+                                        class="fas fa-check-circle text-success me-2"></i>Private Luxury AC SUV for
+                                    Sightseeing</div>
+                                <div class="col-sm-6 small text-muted"><i
+                                        class="fas fa-check-circle text-success me-2"></i>Private Chauffeur-Driven
+                                    Heritage Jeep Ride</div>
+                            </div>
+
+                            <div class="d-flex justify-content-between align-items-center mt-auto pt-4 border-top">
+                                <div>
+                                    <span class="text-muted d-block small">Premium Luxury</span>
+                                    <span class="fs-3 fw-extrabold text-dark">₹22,999</span> <span class="text-muted">/
+                                        person</span>
+                                </div>
+                                <div>
+                                    <a href="https://wa.me/917015638389?text=I%20want%20to%20book%20the%20Jaipur%20Royal%20Heritage%20Tour"
+                                        target="_blank" class="btn-primary-glow px-4 py-3"><i
+                                            class="fab fa-whatsapp me-2"></i> Book on WhatsApp</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose India Packages Section -->
+    <section class="py-5 bg-light" style="border-top: 1px solid rgba(0,0,0,0.05);">
+        <div class="container py-5 text-center">
+            <div class="section-header mb-5 gsap-fade-up">
+                <span class="section-tag">Benefits</span>
+                <h2 class="section-title">Why Book India Tours with Us?</h2>
+            </div>
+
+            <div class="row g-4 gsap-stagger-container">
+                <div class="col-md-4 gsap-stagger-item">
+                    <div class="glass-panel p-4 h-100">
+                        <i class="fas fa-sliders-h fs-1 text-primary-blue mb-3"></i>
+                        <h4>100% Customized Plans</h4>
+                        <p class="text-muted small">We build the tour around your preferences, dates, and budget. Select
+                            flights, transport, and hotels of your choice.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 gsap-stagger-item">
+                    <div class="glass-panel p-4 h-100">
+                        <i class="fas fa-tags fs-1 text-primary-blue mb-3"></i>
+                        <h4>No Hidden Charges</h4>
+                        <p class="text-muted small">Our prices are completely transparent. Enjoy all breakfast,
+                            sightseeing transport, and hotel stays without surprise bills.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 gsap-stagger-item">
+                    <div class="glass-panel p-4 h-100">
+                        <i class="fas fa-headset fs-1 text-primary-blue mb-3"></i>
+                        <h4>24/7 Helpline Support</h4>
+                        <p class="text-muted small">Our local tour representatives and emergency support team are active
+                            24/7 throughout your journey.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pre-Footer CTA -->
+    <section class="py-5">
+        <div class="container gsap-fade-up">
+            <div class="cta-box">
+                <h2 class="display-5 fw-bold mb-3">Want a Custom India Tour Plan?</h2>
+                <p class="lead mb-4">Let our AI Travel Planner design your dream itinerary or get manual quotes from
+                    experts.</p>
+                <a href="contact.html" class="btn-glass px-5 py-3 fs-5"><i class="fas fa-paper-plane me-2"></i> Request
+                    Custom Quote Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comprehensive Footer -->
+    <footer id="contact">
+        <div class="container">
+            <!-- Top Column Grid -->
+            <div class="row g-5">
+                <!-- Column 1: Brand & Logo -->
+                <div class="col-lg-3 col-md-6">
+                    <a href="index.html" class="d-inline-block mb-4">
+                        <img src="assets/images/logo.png" alt="Roamerly Logo"
+                            style="height: 100px; margin-left: -15px; margin-top: -10px; margin-bottom: -10px; filter: brightness(0) invert(1);">
+                    </a>
+                    <p class="text-white-50 small mb-4">Discover unforgettable journeys, luxury escapes, and handcrafted
+                        travel experiences across the world.</p>
+                    <div class="footer-social mt-3">
+                        <a href="https://instagram.com" target="_blank" class="me-3 text-white-50"><i
+                                class="fab fa-instagram fs-5"></i></a>
+                        <a href="https://facebook.com" target="_blank" class="me-3 text-white-50"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="https://youtube.com" target="_blank" class="me-3 text-white-50"><i
+                                class="fab fa-youtube fs-5"></i></a>
+                        <a href="https://wa.me/917015638389" target="_blank" class="me-3 text-white-50"><i
+                                class="fab fa-whatsapp fs-5"></i></a>
+                        <a href="https://twitter.com" target="_blank" class="text-white-50"><i
+                                class="fab fa-twitter fs-5"></i></a>
+                    </div>
+                </div>
+
+                <!-- Column 2: Quick Links -->
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="footer-title">Quick Links</h5>
+                    <a href="index.html" class="footer-link">Home</a>
+                    <a href="usa.html" class="footer-link">Destinations</a>
+                    <a href="india.html" class="footer-link">Packages</a>
+                    <a href="contact.html" class="footer-link">About Us</a>
+                    <a href="index.html#blogs" class="footer-link">Blogs</a>
+                    <a href="contact.html" class="footer-link">Contact</a>
+                </div>
+
+                <!-- Column 3: Popular Destinations -->
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="footer-title">Popular</h5>
+                    <a href="india.html" class="footer-link">Goa</a>
+                    <a href="india.html" class="footer-link">Manali</a>
+                    <a href="india.html" class="footer-link">Kashmir</a>
+                    <a href="middle-east.html" class="footer-link">Dubai</a>
+                    <a href="asia.html" class="footer-link">Bali</a>
+                    <a href="asia.html" class="footer-link">Thailand</a>
+                    <a href="asia.html" class="footer-link">Maldives</a>
+                </div>
+
+                <!-- Column 4: Tour Categories -->
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="footer-title">Tour Types</h5>
+                    <a href="india.html" class="footer-link">Adventure Trips</a>
+                    <a href="india.html" class="footer-link">Family Tours</a>
+                    <a href="usa.html" class="footer-link">Luxury Holidays</a>
+                    <a href="india.html" class="footer-link">Weekend Getaways</a>
+                    <a href="usa.html" class="footer-link">International Tours</a>
+                </div>
+
+                <!-- Column 5: Contact Info -->
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-title">Contact Info</h5>
+                    <p class="small text-white-50 mb-2"><i class="fas fa-phone-alt text-primary-blue me-2"></i> +91
+                        70156 38389</p>
+                    <p class="small text-white-50 mb-2"><i class="fas fa-envelope text-primary-blue me-2"></i>
+                        roamerlyllp@gmail.com</p>
+                    <p class="small text-white-50"><i class="fas fa-map-marker-alt text-primary-blue me-2"></i> A-334,
+                        basement, south city 1, gurgaon, haryana -122001</p>
+                </div>
+            </div>
+
+            <!-- Newsletter & Instagram row -->
+            <div class="row mt-5 pt-5 border-top border-secondary align-items-center g-4">
+                <!-- Newsletter -->
+                <div class="col-lg-6">
+                    <h5 class="text-white mb-2">Subscribe to our newsletter</h5>
+                    <p class="small text-white-50 mb-3">Get travel deals, tips & destination guides directly in your
+                        inbox.</p>
+                    <form action="#" class="newsletter-input-group">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+                <!-- Instagram Gallery -->
+                <div class="col-lg-6">
+                    <h5 class="text-white mb-3 text-lg-end text-start">Instagram Gallery</h5>
+                    <div class="insta-grid justify-content-lg-end">
+                        <div class="insta-item">
+                            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=150&q=80"
+                                alt="Insta Goa">
+                        </div>
+                        <div class="insta-item">
+                            <img src="https://images.unsplash.com/photo-1605649487212-47bdab064df7?auto=format&fit=crop&w=150&q=80"
+                                alt="Insta Manali">
+                        </div>
+                        <div class="insta-item">
+                            <img src="https://images.unsplash.com/photo-1598302842278-40e1e6988891?auto=format&fit=crop&w=150&q=80"
+                                alt="Insta Kashmir">
+                        </div>
+                        <div class="insta-item">
+                            <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=150&q=80"
+                                alt="Insta Dubai">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Trust Badges -->
+            <div class="footer-trust-badges">
+                <div class="row g-4 text-center">
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="trust-badge-item">
+                            <i class="fas fa-lock"></i>
+                            <span>Secure Payments</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="trust-badge-item">
+                            <i class="fas fa-headset"></i>
+                            <span>24/7 Support</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="trust-badge-item">
+                            <i class="fas fa-hotel"></i>
+                            <span>Verified Hotels</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="trust-badge-item">
+                            <i class="fas fa-tags"></i>
+                            <span>Best Price Guarantee</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Copyright Bar -->
+            <div class="footer-bottom d-flex justify-content-between flex-wrap pt-2">
+                <p class="mb-0">&copy; 2026 Roamerly. All Rights Reserved.</p>
+                <p class="mb-0"><a href="#">Privacy Policy</a> | <a href="#">Terms & Conditions</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Fullscreen Search Overlay -->
+    <div id="search-overlay" class="search-overlay">
+        <div class="search-overlay-close" id="searchClose"><i class="fas fa-times"></i></div>
+        <div class="search-overlay-content" style="width: 100%; max-width: 600px; padding: 20px;">
+            <form action="contact.html" method="GET" class="w-100">
+                <h3 class="text-white mb-4 text-center"><i class="fas fa-search me-2 text-gradient"></i>Search
+                    Destination Packages</h3>
+                <div class="search-input-group">
+                    <input type="text" name="destination" placeholder="Search Goa, Kashmir, Dubai..." required>
+                    <button type="submit" class="btn-primary-glow"><i class="fas fa-arrow-right"></i></button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- Floating Buttons -->
+    <a href="https://wa.me/917015638389" target="_blank" class="floating-btn whatsapp-btn">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <button id="back-top-btn" class="floating-btn back-top-btn">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- AI Chatbot Toggle -->
+    <div id="chatbot-toggle-btn" class="chatbot-toggle-btn">
+        <i class="fas fa-robot"></i>
+    </div>
+
+    <!-- AI Chatbot Widget -->
+    <div id="chatbot-widget" class="chatbot-widget">
+        <div class="chatbot-header">
+            <span><i class="fas fa-robot me-2"></i> Roamerly AI</span>
+            <i class="fas fa-times" id="chatbot-close" style="cursor:pointer;"></i>
+        </div>
+        <div class="chatbot-body">
+            <div class="chat-msg bot">
+                Hello! I am your Roamerly AI assistant. How can I help you plan your perfect trip today?
+            </div>
+        </div>
+        <div class="chatbot-footer">
+            <input type="text" class="chatbot-input" placeholder="Type a message...">
+            <button class="chatbot-send"><i class="fas fa-paper-plane"></i></button>
+        </div>
+    </div>
+
+    <!-- JS Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- GSAP Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
