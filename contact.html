@@ -37,7 +37,7 @@
     <nav class="navbar navbar-expand-lg sticky-top">
         <div class="container">
             <a class="navbar-brand" href="index.html">
-                <img src="assets/images/logo.png" alt="Roamerly Logo"
+                <img src="assets/images/logo.jpg" alt=""
                     style="height: 100px; margin-top: -15px; margin-bottom: -15px;">
             </a>
 
@@ -103,71 +103,106 @@
         </div>
     </nav>
     <!-- Hero Section -->
-    <section class="hero-slider" style="height: 60vh;">
-        <div class="swiper hero-swiper" style="height: 100%;">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <img src="https://images.unsplash.com/photo-1528702748617-c64d49f918af?auto=format&fit=crop&w=1920&q=80"
-                        class="hero-img" alt="Contact Us" style="height: 100%; object-fit: cover;">
-                    <div class="hero-overlay"></div>
-                </div>
-            </div>
+    <section style="position: relative; height: 70vh; overflow: hidden;">
+        <img src="assets/images/web/photo-1528702748617-c64d49f918af.jpg" alt="Contact Us"
+            style="width:100%; height:100%; object-fit:cover; object-position: center;">
+        <div
+            style="position:absolute; top:0; left:0; width:100%; height:100%; background: linear-gradient(135deg, rgba(15,23,42,0.75) 0%, rgba(15,23,42,0.45) 100%);">
         </div>
-
-        <div class="hero-content text-center" style="top: 50%;">
-            <h1 class="gsap-zoom-in">Get In <span class="text-gradient">Touch</span></h1>
-            <p class="gsap-fade-up">We are here to help you 24 hours a day / 7 days a week</p>
+        <div
+            style="position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); text-align:center; color:#fff; z-index:2; width:100%; padding: 0 20px;">
+            <span
+                style="display:inline-block; background:rgba(20,184,166,0.2); border:1px solid rgba(20,184,166,0.4); color:#14B8A6; padding:6px 20px; border-radius:30px; font-size:13px; font-weight:700; letter-spacing:1px; text-transform:uppercase; margin-bottom:20px;">CONTACT
+                US</span>
+            <h1
+                style="font-family:'Outfit',sans-serif; font-size:clamp(40px,6vw,72px); font-weight:800; margin-bottom:15px; letter-spacing:-0.02em;">
+                Get In <span class="text-gradient">Touch</span></h1>
+            <p style="font-size:18px; opacity:0.85; max-width:550px; margin:0 auto;">We are here to help you plan your
+                perfect trip — 24 hours a day, 7 days a week.</p>
         </div>
     </section>
 
     <!-- Contact Form & Info -->
-    <section class="py-5" style="margin-top: -80px; position: relative; z-index: 10;">
-        <div class="container">
-            <div class="row g-5">
+    <section class="py-5" style="background: rgba(255,255,255,0.4);">
+        <div class="container py-4">
+
+            <!-- Section Header -->
+            <div class="text-center mb-5">
+                <span class="section-tag">Let's Talk</span>
+                <h2 class="section-title">How Can We Help You?</h2>
+                <p class="section-desc">Fill in the form or reach us directly — our travel experts respond within 2
+                    hours.</p>
+            </div>
+
+            <div class="row g-5 align-items-start">
                 <!-- Form -->
-                <div class="col-lg-7 gsap-fade-up">
-                    <div class="glass-card p-5 h-100 border-primary">
-                        <h3 class="mb-4">Send Us a Message</h3>
+                <div class="col-lg-7">
+                    <div class="glass-panel p-5" style="border-radius:28px;">
+                        <h3 class="fw-bold mb-4" style="font-family:'Outfit',sans-serif;">Send Us a Message <i
+                                class="fas fa-paper-plane text-primary-blue ms-2 fs-5"></i></h3>
                         <form action="https://formspree.io/roamerlyllp@gmail.com" method="POST">
                             <div class="row g-3">
                                 <div class="col-md-6">
-                                    <label class="form-label text-muted">First Name</label>
-                                    <input type="text" name="first_name"
-                                        class="form-control p-3 bg-transparent border-secondary text-white"
-                                        placeholder="John" required>
+                                    <label class="form-label fw-semibold"
+                                        style="font-size:13px; color:var(--text-muted); text-transform:uppercase; letter-spacing:.5px;">First
+                                        Name</label>
+                                    <input type="text" name="first_name" class="form-control p-3" placeholder="John"
+                                        required
+                                        style="border-radius:14px; border:1.5px solid #e2e8f0; font-size:15px; background:#f8fafc; transition:all .3s;"
+                                        onfocus="this.style.borderColor='#14B8A6'; this.style.background='#fff'; this.style.boxShadow='0 0 0 3px rgba(20,184,166,0.1)';"
+                                        onblur="this.style.borderColor='#e2e8f0'; this.style.background='#f8fafc'; this.style.boxShadow='none';">
                                 </div>
                                 <div class="col-md-6">
-                                    <label class="form-label text-muted">Last Name</label>
-                                    <input type="text" name="last_name"
-                                        class="form-control p-3 bg-transparent border-secondary text-white"
-                                        placeholder="Doe" required>
+                                    <label class="form-label fw-semibold"
+                                        style="font-size:13px; color:var(--text-muted); text-transform:uppercase; letter-spacing:.5px;">Last
+                                        Name</label>
+                                    <input type="text" name="last_name" class="form-control p-3" placeholder="Doe"
+                                        required
+                                        style="border-radius:14px; border:1.5px solid #e2e8f0; font-size:15px; background:#f8fafc; transition:all .3s;"
+                                        onfocus="this.style.borderColor='#14B8A6'; this.style.background='#fff'; this.style.boxShadow='0 0 0 3px rgba(20,184,166,0.1)';"
+                                        onblur="this.style.borderColor='#e2e8f0'; this.style.background='#f8fafc'; this.style.boxShadow='none';">
                                 </div>
                                 <div class="col-md-6">
-                                    <label class="form-label text-muted">Email Address</label>
-                                    <input type="email" name="email"
-                                        class="form-control p-3 bg-transparent border-secondary text-white"
-                                        placeholder="john@example.com" required>
+                                    <label class="form-label fw-semibold"
+                                        style="font-size:13px; color:var(--text-muted); text-transform:uppercase; letter-spacing:.5px;">Email
+                                        Address</label>
+                                    <input type="email" name="email" class="form-control p-3"
+                                        placeholder="john@example.com" required
+                                        style="border-radius:14px; border:1.5px solid #e2e8f0; font-size:15px; background:#f8fafc; transition:all .3s;"
+                                        onfocus="this.style.borderColor='#14B8A6'; this.style.background='#fff'; this.style.boxShadow='0 0 0 3px rgba(20,184,166,0.1)';"
+                                        onblur="this.style.borderColor='#e2e8f0'; this.style.background='#f8fafc'; this.style.boxShadow='none';">
                                 </div>
                                 <div class="col-md-6">
-                                    <label class="form-label text-muted">Phone Number</label>
-                                    <input type="tel" name="phone"
-                                        class="form-control p-3 bg-transparent border-secondary text-white"
-                                        placeholder="+91 70156 38389" required>
+                                    <label class="form-label fw-semibold"
+                                        style="font-size:13px; color:var(--text-muted); text-transform:uppercase; letter-spacing:.5px;">Phone
+                                        Number</label>
+                                    <input type="tel" name="phone" class="form-control p-3"
+                                        placeholder="+91 70156 38389" required
+                                        style="border-radius:14px; border:1.5px solid #e2e8f0; font-size:15px; background:#f8fafc; transition:all .3s;"
+                                        onfocus="this.style.borderColor='#14B8A6'; this.style.background='#fff'; this.style.boxShadow='0 0 0 3px rgba(20,184,166,0.1)';"
+                                        onblur="this.style.borderColor='#e2e8f0'; this.style.background='#f8fafc'; this.style.boxShadow='none';">
                                 </div>
                                 <div class="col-12">
-                                    <label class="form-label text-muted">Subject</label>
-                                    <input type="text" name="subject"
-                                        class="form-control p-3 bg-transparent border-secondary text-white"
-                                        placeholder="How can we help you?" required>
+                                    <label class="form-label fw-semibold"
+                                        style="font-size:13px; color:var(--text-muted); text-transform:uppercase; letter-spacing:.5px;">Subject</label>
+                                    <input type="text" name="subject" class="form-control p-3"
+                                        placeholder="How can we help you?" required
+                                        style="border-radius:14px; border:1.5px solid #e2e8f0; font-size:15px; background:#f8fafc; transition:all .3s;"
+                                        onfocus="this.style.borderColor='#14B8A6'; this.style.background='#fff'; this.style.boxShadow='0 0 0 3px rgba(20,184,166,0.1)';"
+                                        onblur="this.style.borderColor='#e2e8f0'; this.style.background='#f8fafc'; this.style.boxShadow='none';">
                                 </div>
                                 <div class="col-12">
-                                    <label class="form-label text-muted">Message</label>
-                                    <textarea name="message"
-                                        class="form-control p-3 bg-transparent border-secondary text-white" rows="5"
-                                        placeholder="Write your message here..." required></textarea>
+                                    <label class="form-label fw-semibold"
+                                        style="font-size:13px; color:var(--text-muted); text-transform:uppercase; letter-spacing:.5px;">Message</label>
+                                    <textarea name="message" class="form-control p-3" rows="5"
+                                        placeholder="Tell us about your travel plans..." required
+                                        style="border-radius:14px; border:1.5px solid #e2e8f0; font-size:15px; background:#f8fafc; transition:all .3s; resize:none;"
+                                        onfocus="this.style.borderColor='#14B8A6'; this.style.background='#fff'; this.style.boxShadow='0 0 0 3px rgba(20,184,166,0.1)';"
+                                        onblur="this.style.borderColor='#e2e8f0'; this.style.background='#f8fafc'; this.style.boxShadow='none';"></textarea>
                                 </div>
-                                <div class="col-12 mt-4">
-                                    <button type="submit" class="btn-luxury w-100 py-3">Send Message</button>
+                                <div class="col-12 mt-2">
+                                    <button type="submit" class="btn-teal-glow w-100 py-3 fs-6"><i
+                                            class="fas fa-paper-plane me-2"></i>Send Message</button>
                                 </div>
                             </div>
                         </form>
@@ -175,32 +210,78 @@
                 </div>
 
                 <!-- Info Cards -->
-                <div class="col-lg-5 gsap-stagger-container">
-                    <div class="glass-card p-4 mb-4 d-flex align-items-center gsap-stagger-item">
-                        <div class="fs-1 text-primary me-4"><i class="fas fa-phone-volume"></i></div>
+                <div class="col-lg-5">
+                    <!-- Call Card -->
+                    <div class="glass-panel p-4 mb-4"
+                        style="border-radius:24px; display:flex; align-items:center; gap:20px; transition:all .3s;"
+                        onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 20px 40px rgba(20,184,166,0.12)';"
+                        onmouseout="this.style.transform='none'; this.style.boxShadow='';">
+                        <div
+                            style="width:64px; height:64px; border-radius:20px; background:rgba(20,184,166,0.12); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+                            <i class="fas fa-phone-volume" style="font-size:26px; color:#14B8A6;"></i>
+                        </div>
                         <div>
-                            <h5 class="mb-1">Call Us</h5>
-                            <h4 class="text-gradient mb-0 fw-bold">+91 70156 38389</h4>
-                            <p class="small text-muted mb-0 mt-1">Available 24/7</p>
+                            <p class="text-muted mb-1"
+                                style="font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing:.5px;">
+                                Call Us</p>
+                            <h4 class="fw-bold mb-1" style="color:var(--text-dark); font-size:20px;">+91 70156 38389
+                            </h4>
+                            <p class="text-muted mb-0" style="font-size:13px;"><i
+                                    class="fas fa-circle text-success me-1" style="font-size:8px;"></i>Available 24/7
+                            </p>
                         </div>
                     </div>
 
-                    <div class="glass-card p-4 mb-4 d-flex align-items-center gsap-stagger-item">
-                        <div class="fs-1 text-info me-4"><i class="fas fa-envelope-open-text"></i></div>
+                    <!-- Email Card -->
+                    <div class="glass-panel p-4 mb-4"
+                        style="border-radius:24px; display:flex; align-items:center; gap:20px; transition:all .3s;"
+                        onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 20px 40px rgba(20,184,166,0.12)';"
+                        onmouseout="this.style.transform='none'; this.style.boxShadow='';">
+                        <div
+                            style="width:64px; height:64px; border-radius:20px; background:rgba(14,165,233,0.12); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+                            <i class="fas fa-envelope-open-text" style="font-size:26px; color:#0EA5E9;"></i>
+                        </div>
                         <div>
-                            <h5 class="mb-1">Email Us</h5>
-                            <p class="lead mb-0 text-white">roamerlyllp@gmail.com</p>
-                            <p class="small text-muted mb-0 mt-1">We'll reply within 2 hours</p>
+                            <p class="text-muted mb-1"
+                                style="font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing:.5px;">
+                                Email Us</p>
+                            <h5 class="fw-bold mb-1" style="color:var(--text-dark);">roamerlyllp@gmail.com</h5>
+                            <p class="text-muted mb-0" style="font-size:13px;">We'll reply within 2 hours</p>
                         </div>
                     </div>
 
-                    <div class="glass-card p-4 d-flex align-items-center gsap-stagger-item">
-                        <div class="fs-1 text-warning me-4"><i class="fas fa-map-marker-alt"></i></div>
+                    <!-- Address Card -->
+                    <div class="glass-panel p-4 mb-4"
+                        style="border-radius:24px; display:flex; align-items:center; gap:20px; transition:all .3s;"
+                        onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 20px 40px rgba(20,184,166,0.12)';"
+                        onmouseout="this.style.transform='none'; this.style.boxShadow='';">
+                        <div
+                            style="width:64px; height:64px; border-radius:20px; background:rgba(249,115,22,0.12); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+                            <i class="fas fa-map-marker-alt" style="font-size:26px; color:#F97316;"></i>
+                        </div>
                         <div>
-                            <h5 class="mb-1">Visit Us</h5>
-                            <p class="text-muted mb-0">A-334, basement, south city 1,<br>gurgaon, haryana -122001</p>
+                            <p class="text-muted mb-1"
+                                style="font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing:.5px;">
+                                Visit Us</p>
+                            <h5 class="fw-bold mb-1" style="color:var(--text-dark);">A-334, Basement</h5>
+                            <p class="text-muted mb-0" style="font-size:13px;">South City 1, Gurgaon, Haryana - 122001
+                            </p>
                         </div>
                     </div>
+
+                    <!-- WhatsApp CTA -->
+                    <a href="https://wa.me/917015638389?text=Hi%20Roamerly!%20I'd%20like%20to%20plan%20a%20trip."
+                        target="_blank"
+                        style="display:flex; align-items:center; gap:15px; background:linear-gradient(135deg,#25D366,#128C7E); color:#fff; padding:20px 24px; border-radius:24px; text-decoration:none; transition:all .3s; box-shadow:0 10px 30px rgba(37,211,102,0.25);"
+                        onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 20px 40px rgba(37,211,102,0.4)';"
+                        onmouseout="this.style.transform='none'; this.style.boxShadow='0 10px 30px rgba(37,211,102,0.25)';">
+                        <i class="fab fa-whatsapp" style="font-size:36px;"></i>
+                        <div>
+                            <p style="margin:0; font-size:13px; opacity:.85;">Chat with our experts</p>
+                            <p style="margin:0; font-weight:800; font-size:17px;">WhatsApp Us Now</p>
+                        </div>
+                        <i class="fas fa-arrow-right ms-auto"></i>
+                    </a>
                 </div>
             </div>
         </div>
@@ -226,7 +307,7 @@
                 <!-- Column 1: Brand & Logo -->
                 <div class="col-lg-3 col-md-6">
                     <a href="index.html" class="d-inline-block mb-4">
-                        <img src="assets/images/logo.png" alt="Roamerly Logo"
+                        <img src="assets/images/logo.jpg" alt=""
                             style="height: 100px; margin-left: -15px; margin-top: -10px; margin-bottom: -10px; filter: brightness(0) invert(1);">
                     </a>
                     <p class="text-white-50 small mb-4">Discover unforgettable journeys, luxury escapes, and handcrafted
@@ -307,20 +388,16 @@
                     <h5 class="text-white mb-3 text-lg-end text-start">Instagram Gallery</h5>
                     <div class="insta-grid justify-content-lg-end">
                         <div class="insta-item">
-                            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=150&q=80"
-                                alt="Insta Goa">
+                            <img src="assets/images/web/photo-1507525428034-b723cf961d3e.jpg" alt="Insta Goa">
                         </div>
                         <div class="insta-item">
-                            <img src="https://images.unsplash.com/photo-1605649487212-47bdab064df7?auto=format&fit=crop&w=150&q=80"
-                                alt="Insta Manali">
+                            <img src="assets/images/web/photo-1605649487212-47bdab064df7.jpg" alt="Insta Manali">
                         </div>
                         <div class="insta-item">
-                            <img src="https://images.unsplash.com/photo-1598302842278-40e1e6988891?auto=format&fit=crop&w=150&q=80"
-                                alt="Insta Kashmir">
+                            <img src="assets/images/web/photo-1598302842278-40e1e6988891.jpg" alt="Insta Kashmir">
                         </div>
                         <div class="insta-item">
-                            <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=150&q=80"
-                                alt="Insta Dubai">
+                            <img src="assets/images/web/photo-1512453979798-5ea266f8880c.jpg" alt="Insta Dubai">
                         </div>
                     </div>
                 </div>

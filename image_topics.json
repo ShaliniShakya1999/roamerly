@@ -1,0 +1,474 @@
+{
+    "africa-hero.jpg": [
+        "Africa Hero Banner",
+        "africa.html"
+    ],
+    "africa-place-0.jpg": [
+        "Serengeti Safari",
+        "africa.html"
+    ],
+    "africa-place-1.jpg": [
+        "Cape Town",
+        "africa.html"
+    ],
+    "africa-place-2.jpg": [
+        "Pyramids of Giza",
+        "africa.html"
+    ],
+    "africa-place-3.jpg": [
+        "Victoria Falls",
+        "africa.html"
+    ],
+    "africa-pkg1.jpg": [
+        "Kenya Safari Classic",
+        "africa.html"
+    ],
+    "africa-pkg2.jpg": [
+        "Cape Town & Winelands",
+        "africa.html"
+    ],
+    "asia-hero.jpg": [
+        "Asia Hero Banner",
+        "asia.html"
+    ],
+    "asia-place-0.jpg": [
+        "Thailand",
+        "asia.html"
+    ],
+    "asia-place-1.jpg": [
+        "Vietnam",
+        "asia.html"
+    ],
+    "asia-place-2.jpg": [
+        "Sri Lanka",
+        "asia.html"
+    ],
+    "asia-place-3.jpg": [
+        "Nepal",
+        "asia.html"
+    ],
+    "asia-pkg1.jpg": [
+        "Thailand Discovery",
+        "asia.html"
+    ],
+    "asia-pkg2.jpg": [
+        "Vietnam Coastal",
+        "asia.html"
+    ],
+    "australia-place-1.jpg": [
+        "Great Barrier Reef",
+        "australia.html"
+    ],
+    "australia-place-2.jpg": [
+        "Melbourne",
+        "australia.html"
+    ],
+    "australia-place-3.jpg": [
+        "Uluru",
+        "australia.html"
+    ],
+    "australia-pkg2.jpg": [
+        "Outback & Coast",
+        "australia.html"
+    ],
+    "bangalore-place-1.jpg": [
+        "Bangalore Palace",
+        "bangalore.html"
+    ],
+    "bangalore-place-3.jpg": [
+        "Nandi Hills",
+        "bangalore.html"
+    ],
+    "bangalore-pkg2.jpg": [
+        "Nandi Hills Escape",
+        "bangalore.html"
+    ],
+    "canada-place-0.jpg": [
+        "Banff National Park",
+        "canada.html"
+    ],
+    "canada-place-1.jpg": [
+        "Niagara Falls",
+        "canada.html"
+    ],
+    "canada-place-2.jpg": [
+        "Toronto",
+        "canada.html"
+    ],
+    "canada-place-3.jpg": [
+        "Vancouver",
+        "canada.html"
+    ],
+    "canada-pkg1.jpg": [
+        "Canadian Rockies",
+        "canada.html"
+    ],
+    "canada-pkg2.jpg": [
+        "Toronto & Niagara",
+        "canada.html"
+    ],
+    "caribbean-place-1.jpg": [
+        "Jamaica",
+        "caribbean.html"
+    ],
+    "caribbean-place-2.jpg": [
+        "Barbados",
+        "caribbean.html"
+    ],
+    "caribbean-place-3.jpg": [
+        "St. Lucia",
+        "caribbean.html"
+    ],
+    "caribbean-pkg2.jpg": [
+        "Jamaica All-Inclusive",
+        "caribbean.html"
+    ],
+    "chennai-place-1.jpg": [
+        "Kapaleeshwarar Temple",
+        "chennai.html"
+    ],
+    "chennai-place-2.jpg": [
+        "Mahabalipuram",
+        "chennai.html"
+    ],
+    "chennai-place-3.jpg": [
+        "Fort St. George",
+        "chennai.html"
+    ],
+    "chennai-pkg2.jpg": [
+        "Temple Trail",
+        "chennai.html"
+    ],
+    "europe-place-1.jpg": [
+        "Switzerland",
+        "europe.html"
+    ],
+    "europe-place-2.jpg": [
+        "Italy",
+        "europe.html"
+    ],
+    "europe-place-3.jpg": [
+        "Greece",
+        "europe.html"
+    ],
+    "europe-pkg2.jpg": [
+        "Italy Classic",
+        "europe.html"
+    ],
+    "far-east-hero.jpg": [
+        "Far Hero Banner",
+        "far-east.html"
+    ],
+    "far-east-place-0.jpg": [
+        "Tokyo",
+        "far-east.html"
+    ],
+    "far-east-place-1.jpg": [
+        "Bali",
+        "far-east.html"
+    ],
+    "far-east-place-2.jpg": [
+        "Singapore",
+        "far-east.html"
+    ],
+    "far-east-pkg1.jpg": [
+        "Japan Highlights",
+        "far-east.html"
+    ],
+    "far-east-pkg2.jpg": [
+        "Bali Wellness Retreat",
+        "far-east.html"
+    ],
+    "goa-hero.jpg": [
+        "Goa Hero Banner",
+        "goa.html"
+    ],
+    "goa-place-0.jpg": [
+        "Baga & Calangute",
+        "goa.html"
+    ],
+    "goa-place-1.jpg": [
+        "Old Goa Churches",
+        "goa.html"
+    ],
+    "goa-place-2.jpg": [
+        "Dudhsagar Falls",
+        "goa.html"
+    ],
+    "goa-place-3.jpg": [
+        "Palolem Beach",
+        "goa.html"
+    ],
+    "goa-pkg1.jpg": [
+        "Goa Beach Retreat",
+        "goa.html"
+    ],
+    "goa-pkg2.jpg": [
+        "South Goa Serenity",
+        "goa.html"
+    ],
+    "hyderabad-hero.jpg": [
+        "Hyderabad Hero Banner",
+        "hyderabad.html"
+    ],
+    "hyderabad-place-0.jpg": [
+        "Charminar",
+        "hyderabad.html"
+    ],
+    "hyderabad-place-1.jpg": [
+        "Golconda Fort",
+        "hyderabad.html"
+    ],
+    "hyderabad-place-2.jpg": [
+        "Ramoji Film City",
+        "hyderabad.html"
+    ],
+    "hyderabad-pkg1.jpg": [
+        "Hyderabad Heritage",
+        "hyderabad.html"
+    ],
+    "hyderabad-pkg2.jpg": [
+        "Ramoji & City Fun",
+        "hyderabad.html"
+    ],
+    "jaipur-place-1.jpg": [
+        "Hawa Mahal",
+        "jaipur.html"
+    ],
+    "jaipur-place-2.jpg": [
+        "City Palace",
+        "jaipur.html"
+    ],
+    "jaipur-pkg2.jpg": [
+        "Pink City Weekend",
+        "jaipur.html"
+    ],
+    "kochi-place-1.jpg": [
+        "Chinese Fishing Nets",
+        "kochi.html"
+    ],
+    "kochi-place-2.jpg": [
+        "Alleppey Backwaters",
+        "kochi.html"
+    ],
+    "kochi-place-3.jpg": [
+        "Munnar Hills",
+        "kochi.html"
+    ],
+    "kochi-pkg1.jpg": [
+        "Kerala Backwaters",
+        "kochi.html"
+    ],
+    "kochi-pkg2.jpg": [
+        "Kochi & Munnar",
+        "kochi.html"
+    ],
+    "kolkata-hero.jpg": [
+        "Kolkata Hero Banner",
+        "kolkata.html"
+    ],
+    "kolkata-place-0.jpg": [
+        "Victoria Memorial",
+        "kolkata.html"
+    ],
+    "kolkata-place-2.jpg": [
+        "Kumartuli",
+        "kolkata.html"
+    ],
+    "kolkata-place-3.jpg": [
+        "Park Street",
+        "kolkata.html"
+    ],
+    "kolkata-pkg1.jpg": [
+        "Kolkata Culture Tour",
+        "kolkata.html"
+    ],
+    "latin-america-hero.jpg": [
+        "Latin Hero Banner",
+        "latin-america.html"
+    ],
+    "latin-america-place-0.jpg": [
+        "Machu Picchu",
+        "latin-america.html"
+    ],
+    "latin-america-place-1.jpg": [
+        "Rio de Janeiro",
+        "latin-america.html"
+    ],
+    "latin-america-place-2.jpg": [
+        "Amazon Rainforest",
+        "latin-america.html"
+    ],
+    "latin-america-place-3.jpg": [
+        "Buenos Aires",
+        "latin-america.html"
+    ],
+    "latin-america-pkg1.jpg": [
+        "Peru Explorer",
+        "latin-america.html"
+    ],
+    "latin-america-pkg2.jpg": [
+        "Brazil Coast & Culture",
+        "latin-america.html"
+    ],
+    "mexico-place-1.jpg": [
+        "Chichen Itza",
+        "mexico.html"
+    ],
+    "mexico-place-2.jpg": [
+        "Mexico City",
+        "mexico.html"
+    ],
+    "mexico-pkg2.jpg": [
+        "Mexico Heritage",
+        "mexico.html"
+    ],
+    "middle-east-hero.jpg": [
+        "Middle Hero Banner",
+        "middle-east.html"
+    ],
+    "middle-east-place-0.jpg": [
+        "Dubai",
+        "middle-east.html"
+    ],
+    "middle-east-place-1.jpg": [
+        "Abu Dhabi",
+        "middle-east.html"
+    ],
+    "middle-east-place-2.jpg": [
+        "Doha",
+        "middle-east.html"
+    ],
+    "middle-east-place-3.jpg": [
+        "Petra, Jordan",
+        "middle-east.html"
+    ],
+    "middle-east-pkg1.jpg": [
+        "Dubai Luxury Escape",
+        "middle-east.html"
+    ],
+    "middle-east-pkg2.jpg": [
+        "UAE Twin City",
+        "middle-east.html"
+    ],
+    "mumbai-place-2.jpg": [
+        "Elephanta Caves",
+        "mumbai.html"
+    ],
+    "mumbai-place-3.jpg": [
+        "Colaba & Fort",
+        "mumbai.html"
+    ],
+    "new-delhi-place-1.jpg": [
+        "Red Fort",
+        "new-delhi.html"
+    ],
+    "new-delhi-place-2.jpg": [
+        "Humayun",
+        "new-delhi.html"
+    ],
+    "new-zealand-place-1.jpg": [
+        "Milford Sound",
+        "new-zealand.html"
+    ],
+    "new-zealand-place-2.jpg": [
+        "Auckland",
+        "new-zealand.html"
+    ],
+    "new-zealand-place-3.jpg": [
+        "Rotorua",
+        "new-zealand.html"
+    ],
+    "new-zealand-pkg2.jpg": [
+        "North Island Culture",
+        "new-zealand.html"
+    ],
+    "pondicherry-hero.jpg": [
+        "Pondicherry Hero Banner",
+        "pondicherry.html"
+    ],
+    "pondicherry-place-0.jpg": [
+        "French Quarter",
+        "pondicherry.html"
+    ],
+    "pondicherry-place-1.jpg": [
+        "Promenade Beach",
+        "pondicherry.html"
+    ],
+    "pondicherry-place-2.jpg": [
+        "Auroville",
+        "pondicherry.html"
+    ],
+    "pondicherry-place-3.jpg": [
+        "Paradise Beach",
+        "pondicherry.html"
+    ],
+    "pondicherry-pkg1.jpg": [
+        "French Coast Getaway",
+        "pondicherry.html"
+    ],
+    "pondicherry-pkg2.jpg": [
+        "Auroville Wellness",
+        "pondicherry.html"
+    ],
+    "pune-place-1.jpg": [
+        "Aga Khan Palace",
+        "pune.html"
+    ],
+    "pune-place-2.jpg": [
+        "Lonavala",
+        "pune.html"
+    ],
+    "pune-place-3.jpg": [
+        "Sinhagad Fort",
+        "pune.html"
+    ],
+    "pune-pkg2.jpg": [
+        "Sinhagad Adventure",
+        "pune.html"
+    ],
+    "usa-hero.jpg": [
+        "Usa Hero Banner",
+        "usa.html"
+    ],
+    "usa-place-0.jpg": [
+        "New York City",
+        "usa.html"
+    ],
+    "usa-place-1.jpg": [
+        "Grand Canyon",
+        "usa.html"
+    ],
+    "usa-place-2.jpg": [
+        "San Francisco",
+        "usa.html"
+    ],
+    "usa-place-3.jpg": [
+        "Orlando",
+        "usa.html"
+    ],
+    "usa-pkg1.jpg": [
+        "East Coast Highlights",
+        "usa.html"
+    ],
+    "usa-pkg2.jpg": [
+        "West Coast Adventure",
+        "usa.html"
+    ],
+    "varanasi-place-1.jpg": [
+        "Kashi Vishwanath",
+        "varanasi.html"
+    ],
+    "varanasi-place-2.jpg": [
+        "Sarnath",
+        "varanasi.html"
+    ],
+    "varanasi-place-3.jpg": [
+        "Banarasi Silk Lanes",
+        "varanasi.html"
+    ],
+    "varanasi-pkg2.jpg": [
+        "Varanasi & Sarnath",
+        "varanasi.html"
+    ]
+}

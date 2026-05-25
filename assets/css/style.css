@@ -549,7 +549,7 @@ footer { padding: 80px 0 30px; border-top: 1px solid rgba(0,0,0,0.05); backgroun
 .hero-fullscreen {
     min-height: 100vh;
     position: relative;
-    background: url('https://images.unsplash.com/photo-1506929562872-bb421503ef21?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
+    background: url('../images/web/photo-1506929562872-bb421503ef21.jpg') center/cover no-repeat;
     display: flex;
     align-items: center;
     color: #fff;
