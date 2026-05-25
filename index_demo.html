@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roamerly – Premium & Luxury Travel Experiences</title>
+    <!-- Google Fonts & FontAwesome -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="assets/css/theme.css">
+    
+    <style>
+        /* Supplementary layout helper classes */
+        .section-header {
+            text-align: center;
+            max-width: 600px;
+            margin: 0 auto 3.5rem;
+        }
+        .section-header p {
+            color: var(--text-dark);
+            opacity: 0.8;
+            font-size: 1.05rem;
+            margin-top: 0.5rem;
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, var(--primary-blue), var(--secondary-blue));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .rating {
+            color: #FBBF24;
+            font-size: 0.85rem;
+            margin-bottom: 0.4rem;
+        }
+        .features-list {
+            list-style: none;
+            margin: 1rem 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+        .features-list li {
+            background: rgba(30, 136, 229, 0.05);
+            color: var(--primary-blue);
+            font-size: 0.75rem;
+            font-weight: 600;
+            padding: 0.3rem 0.75rem;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            gap: 0.25rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Sticky Glass Navbar -->
+    <nav class="navbar">
+        <a href="index.html" class="navbar-brand">
+            <img src="assets/images/logo.png" alt="Roamerly Logo" class="navbar-logo">
+        </a>
+        <ul class="nav-links">
+            <li><a class="nav-link" href="#destinations">Destinations</a></li>
+            <li><a class="nav-link" href="#packages">Luxury Packages</a></li>
+            <li><a class="nav-link" href="#experience">Experiences</a></li>
+            <li><a class="nav-link" href="#testimonials">Testimonials</a></li>
+        </ul>
+        <button class="cta-btn">Enquire Now</button>
+    </nav>
+
+    <!-- Luxury Hero Section -->
+    <section class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content container">
+            <h1>Crafting Unforgettable <span class="text-gradient" style="background: linear-gradient(135deg, #fff, #4FC3F7); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Luxury</span> Journeys</h1>
+            <p>Immerse yourself in handpicked premium destinations designed for the discerning traveler.</p>
+            <button class="hero-cta primary">Explore Premium Tours</button>
+            <button class="hero-cta secondary">Plan with AI Planner</button>
+        </div>
+    </section>
+
+    <!-- Modern Search / Filter Box -->
+    <section class="search-section">
+        <div class="container">
+            <form class="search-bar" onsubmit="event.preventDefault();">
+                <div class="search-field">
+                    <label for="destInput"><i class="fas fa-map-marker-alt text-primary-blue me-2"></i>Destination</label>
+                    <input type="text" id="destInput" placeholder="Where to?" required>
+                </div>
+                <div class="search-field">
+                    <label for="typeSelect"><i class="fas fa-gem text-primary-blue me-2"></i>Travel Style</label>
+                    <select id="typeSelect">
+                        <option>Luxury Honeymoon</option>
+                        <option>Private Yacht & Cruise</option>
+                        <option>Alpine Luxury Retreats</option>
+                        <option>Premium Wild Safaris</option>
+                    </select>
+                </div>
+                <div class="search-field">
+                    <label for="budgetSelect"><i class="fas fa-wallet text-primary-blue me-2"></i>Budget Range</label>
+                    <select id="budgetSelect">
+                        <option>₹1,50,000 - ₹3,00,000</option>
+                        <option>₹3,00,000 - ₹6,00,000</option>
+                        <option>₹6,00,000+</option>
+                    </select>
+                </div>
+                <button type="submit" aria-label="Search Packages">
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Popular Premium Destinations -->
+    <section id="destinations" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Ultra-Luxury Destinations</h2>
+                <p>Curated collections of the world's most breathtaking getaways.</p>
+            </div>
+            <div class="grid">
+                <!-- Card 1 -->
+                <div class="card">
+                    <div class="card-img-wrap">
+                        <img src="assets/images/destinations/europe-hero.jpg" alt="Switzerland">
+                        <div class="card-badge">Switzerland</div>
+                    </div>
+                    <div class="card-info">
+                        <h3>St. Moritz & Zermatt</h3>
+                        <p>Snow-capped peaks, scenic private trains, and world-class alpine chalets.</p>
+                        <div class="card-footer">
+                            <div class="card-price">₹2,85,000 <span>/ person</span></div>
+                            <button class="card-btn">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="card">
+                    <div class="card-img-wrap">
+                        <img src="assets/images/destinations/asia-hero.jpg" alt="Maldives">
+                        <div class="card-badge">Maldives</div>
+                    </div>
+                    <div class="card-info">
+                        <h3>Private Island Overwater Villas</h3>
+                        <p>Turquoise lagoons, dedicated butlers, and bespoke sunset ocean cruises.</p>
+                        <div class="card-footer">
+                            <div class="card-price">₹3,40,000 <span>/ person</span></div>
+                            <button class="card-btn">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="card">
+                    <div class="card-img-wrap">
+                        <img src="assets/images/destinations/middle-east-hero.jpg" alt="Dubai">
+                        <div class="card-badge">Dubai</div>
+                    </div>
+                    <div class="card-info">
+                        <h3>The Royal Penthouse Suite</h3>
+                        <p>Stunning skyline views, private beach access, and premium desert dune dinners.</p>
+                        <div class="card-footer">
+                            <div class="card-price">₹2,10,000 <span>/ person</span></div>
+                            <button class="card-btn">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 4 -->
+                <div class="card">
+                    <div class="card-img-wrap">
+                        <img src="assets/images/destinations/africa-place-0.jpg" alt="Serengeti">
+                        <div class="card-badge">Tanzania</div>
+                    </div>
+                    <div class="card-info">
+                        <h3>Serengeti Premium Safaris</h3>
+                        <p>Luxury glamping under the stars, hot air balloon flights, and wildlife encounters.</p>
+                        <div class="card-footer">
+                            <div class="card-price">₹4,25,000 <span>/ person</span></div>
+                            <button class="card-btn">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Luxury Honeymoon & Adventure Split Sections -->
+    <section id="experience" class="section" style="background: rgba(30, 136, 229, 0.02); border-top: 1px solid rgba(30, 136, 229, 0.04); border-bottom: 1px solid rgba(30, 136, 229, 0.04);">
+        <div class="container">
+            <div class="split-section">
+                <!-- Honeymoon Card -->
+                <div class="split-card">
+                    <div class="split-card-bg" style="background-image: url('assets/images/destinations/caribbean-beach.jpg');"></div>
+                    <div class="split-card-overlay"></div>
+                    <div class="split-card-content">
+                        <h3>Bespoke Honeymoons</h3>
+                        <p>Ignite romance with candlelit dinners, couples spas, and private pool suites.</p>
+                        <button class="split-btn">Explore Packages</button>
+                    </div>
+                </div>
+                <!-- Adventure Card -->
+                <div class="split-card">
+                    <div class="split-card-bg" style="background-image: url('assets/images/destinations/canada-pkg2.jpg');"></div>
+                    <div class="split-card-overlay"></div>
+                    <div class="split-card-content">
+                        <h3>Elite Expeditions</h3>
+                        <p>Chartered helicopter skiing, private deep-sea fishing, and arctic sky viewing.</p>
+                        <button class="split-btn">Explore Expeditions</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trending Luxury Packages -->
+    <section id="packages" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Trending Ultra-Premium Tours</h2>
+                <p>Fully escorted private journeys with premium flights, luxury dining, and verified stays.</p>
+            </div>
+            <div class="grid">
+                <!-- Package 1 -->
+                <div class="card">
+                    <div class="card-img-wrap">
+                        <img src="assets/images/destinations/europe-pkg2.jpg" alt="Amalfi Coast">
+                        <div class="card-badge">Premium Italy</div>
+                    </div>
+                    <div class="card-info">
+                        <div class="rating"><i class="fas fa-star"></i> 5.0 (92 reviews)</div>
+                        <h3>Amalfi Coast & Venice Private Tour</h3>
+                        <p>10 Days of private yacht transfers, boutique hotel stays, and custom food walks.</p>
+                        <ul class="features-list">
+                            <li><i class="fas fa-plane"></i> Business Class</li>
+                            <li><i class="fas fa-hotel"></i> 5★ Resorts</li>
+                            <li><i class="fas fa-utensils"></i> Michelin Dinners</li>
+                        </ul>
+                        <div class="card-footer">
+                            <div class="card-price">₹4,80,000 <span>/ person</span></div>
+                            <button class="card-btn">Book Premium</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Package 2 -->
+                <div class="card">
+                    <div class="card-img-wrap">
+                        <img src="assets/images/destinations/asia-pkg1.jpg" alt="Japan Classic">
+                        <div class="card-badge">Premium Japan</div>
+                    </div>
+                    <div class="card-info">
+                        <div class="rating"><i class="fas fa-star"></i> 4.9 (78 reviews)</div>
+                        <h3>Imperial Japan Cherry Blossom</h3>
+                        <p>8 Days – Stay in premium Ryokans, private Mt. Fuji views, and tea ceremonies.</p>
+                        <ul class="features-list">
+                            <li><i class="fas fa-car"></i> Chauffeur Car</li>
+                            <li><i class="fas fa-hiking"></i> Private Guide</li>
+                            <li><i class="fas fa-spa"></i> Hot Springs</li>
+                        </ul>
+                        <div class="card-footer">
+                            <div class="card-price">₹3,95,000 <span>/ person</span></div>
+                            <button class="card-btn">Book Premium</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Package 3 -->
+                <div class="card">
+                    <div class="card-img-wrap">
+                        <img src="assets/images/destinations/africa-pkg1.jpg" alt="Cape Town">
+                        <div class="card-badge">Premium South Africa</div>
+                    </div>
+                    <div class="card-info">
+                        <div class="rating"><i class="fas fa-star"></i> 4.9 (64 reviews)</div>
+                        <h3>Cape Town & Luxury Safari Escapes</h3>
+                        <p>9 Days – Helicopter flight over Cape Point, premium villa, and big 5 safaris.</p>
+                        <ul class="features-list">
+                            <li><i class="fas fa-helicopter"></i> Heli Ride</li>
+                            <li><i class="fas fa-wine-glass"></i> Wine Tasting</li>
+                            <li><i class="fas fa-camera"></i> Private Safari</li>
+                        </ul>
+                        <div class="card-footer">
+                            <div class="card-price">₹5,10,000 <span>/ person</span></div>
+                            <button class="card-btn">Book Premium</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Slider -->
+    <section id="testimonials" class="section" style="background: rgba(30, 136, 229, 0.02);">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Bespoke Traveler Stories</h2>
+                <p>Hear from our premium community of globetrotters who choose luxury with Roamerly.</p>
+            </div>
+            <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
+                <div class="card" style="padding: 2.25rem;">
+                    <div class="rating" style="font-size:1.1rem;margin-bottom:1rem;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p style="font-style: italic; font-size: 0.95rem; color: var(--text-dark); line-height: 1.7; margin-bottom: 1.5rem;">
+                        "Roamerly turned our honeymoon in the Maldives into a magical dream. The overwater villa stay and private candlelight dinner on a sandbank were breathtaking. Seamless experience!"
+                    </p>
+                    <h4 style="font-size:1rem;color:var(--dark-navy);">Rohan & Priya Sharma</h4>
+                    <p style="font-size:0.75rem;color:var(--primary-blue);text-transform:uppercase;font-weight:700;margin-top:0.2rem;">Mumbai, India</p>
+                </div>
+                <div class="card" style="padding: 2.25rem;">
+                    <div class="rating" style="font-size:1.1rem;margin-bottom:1rem;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p style="font-style: italic; font-size: 0.95rem; color: var(--text-dark); line-height: 1.7; margin-bottom: 1.5rem;">
+                        "Our family tour of Switzerland was handled with absolute care. The business class travel, private chauffeur, and handpicked boutique stays made all the difference. Stunning service!"
+                    </p>
+                    <h4 style="font-size:1rem;color:var(--dark-navy);">Vikram Aditya Singh</h4>
+                    <p style="font-size:0.75rem;color:var(--primary-blue);text-transform:uppercase;font-weight:700;margin-top:0.2rem;">New Delhi, India</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Premium Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <img src="assets/images/logo.png" alt="Roamerly Logo" class="footer-logo">
+                    <p class="footer-desc">Crafting handpicked luxury journeys for premium travelers. Discover bespoke vacations, top boutique stays, and verified experiences across the globe.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Explore</h4>
+                    <ul class="footer-links">
+                        <li><a href="#destinations">Bespoke Destinations</a></li>
+                        <li><a href="#packages">Escorted Premium Packages</a></li>
+                        <li><a href="#experience">Luxury Honeymoons</a></li>
+                        <li><a href="#experience">Elite Expeditions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Support</h4>
+                    <ul class="footer-links">
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#">About Roamerly</a></li>
+                        <li><a href="#">FAQ & Help Center</a></li>
+                        <li><a href="#">Travel Advisory</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Stay Inspired</h4>
+                    <p class="footer-desc" style="font-size: 0.85rem; margin-bottom: 0.8rem;">Subscribe to receive handpicked luxury travel itineraries & exclusive member offers.</p>
+                    <form class="newsletter-form" onsubmit="event.preventDefault();">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Roamerly.in. All Rights Reserved. Designed for premium travel luxury.</p>
+                <p>
+                    <a href="#" style="color: inherit; text-decoration: none;">Privacy Policy</a> &nbsp;|&nbsp; 
+                    <a href="#" style="color: inherit; text-decoration: none;">Terms of Service</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
